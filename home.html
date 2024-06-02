@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietCorp</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Logo Section -->
+                <a class="navbar-brand" href="#">
+                    <img width="250" src="../assets/img/logo.png" alt="Company Logo">
+                </a>
+
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse navbar-custom" id="navbarNav">
+                    <ul class="navbar-nav mx-auto navbar-ul-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SẢN PHẨM
+                            </a>
+                            <ul class="dropdown-menu navbar-nav-custom" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Gốm sứ mỹ nghệ</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Đồ gỗ mỹ nghệ</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Mây đan tre</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Sứ dưỡng sinh</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Trà - cà phê</a>
+
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Phòng ăn</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CỬA HÀNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <!-- Control Icons -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"
+                                    aria-hidden="true"></i><span class="sr-only">Search</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-user" aria-hidden="true"></i><span
+                                    class="sr-only">User</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i><span
+                                    class="sr-only">Wishlist</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-shopify" aria-hidden="true"></i><span
+                                    class="sr-only">Shop</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodywrap">
+        <div class="slider-cont" style="position: relative">
+            <div class="slider-container" style="position: absolute">
+                <div class="slider" id="slider">
+                    <div class="slide active" style="position: absolute; z-index: 1">
+                        <img class="img-fluid" src="./assets/img/silde/slider1.webp" alt="Image 1" />
+                    </div>
+                    <div id="action-slide" class="slide-bg-fixed"></div>
+
+                    <div class="slide-top" style="
+                    text-align: center;
+                    position: absolute;
+                    opacity: 0;
+                    z-index: 3;
+                  ">
+                        <h3 style="
+                      font-weight: 700;
+                      font-size: 70px;
+                      color: white;
+                      text-transform: uppercase;
+                    ">
+                            Bộ sưu tập
+                        </h3>
+                        <h5 style="
+                      font-size: 105px;
+                      margin-top: -5%;
+                      color: white;
+                      font-family: 'Allura', cursive;
+                      font-weight: 300;
+                    ">
+                            Ngược dòng lịch sử
+                        </h5>
+                        <a style="
+                      padding: 10px 30px;
+                      border-radius: 23px;
+                      color: black;
+                      background-color: white;
+                      cursor: pointer;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                    ">
+                            Khám phá ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="clients" class="clients">
+            <div class="container" data-aos="zoom-out">
+
+                <div class="clients-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_6.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Gốm sứ mỹ nghệ</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_10.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Đồ gỗ mỹ nghệ</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_7.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Mây đan tre</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_3.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Sứ dưỡng sinh</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_4.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Trà cà phê</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="thumb-img">
+                                    <img src="../assets/img/thumb/thumb_2.webp" alt="">
+                                </div>
+                                <div class="thumb-title">Phòng ăn</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 banner-content">
+                        <a href="" class="banner-img">
+                            <img src="/assets/img/banner/banner1.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12 banner-content">
+                        <a href="" class="banner-img">
+                            <img src="/assets/img/banner/banner2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flash-sale fs-bg">
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        <div class="dot pulse-border"></div>
+                        <a href="">Khuyến mãi đặc biệt</a>
+                    </h2>
+                    <div class="thumbnail-flast">
+                        <div class="count-down">
+                            Chương trình đã kết thúc, hẹn gặp lại bạn trong thời gian sớm nhất!
+                        </div>
+                        <div class="button-control">
+                            <div id="section-flashsale-prev" class="me-3">
+                                <i class="fa-solid fa-left-long"></i>
+                            </div>
+                            <div id="section-flashsale-next">
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fs-swiper-container">
+                    <div class="fs-swiper-wrapper ">
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="/assets/img/product-thumbnail/tuong-linh-vat/h1.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Rồng Xanh (Thuần Ngọc) 23.9 cm - Men Ngọc (bóng)</a>
+                                </h3>
+                                <div class="product-price">9,720,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Rồng Xanh (Thuần Ngọc) 23.9 cm - Men Ngọc (bóng)</a>
+                                </h3>
+                                <div class="product-price">9,720,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/may-dan-tre/i10.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Đèn Mây Tre: Mẫu đèn tre hình trụ tròn thả trần</a>
+                                </h3>
+                                <div class="product-price">1,050,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/do-go/i3.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Combo 6 Món Gỗ Hương - Khay Trà Rồng Chầu</a>
+                                </h3>
+                                <div class="product-price">1,500,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/may-dan-tre/i1.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Mây tre đan - mẹt mây tre đan hoạ tiết</a>
+                                </h3>
+                                <div class="product-price">920,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/do-go/i1.jpeg" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Đĩa Gỗ Chữ Hiếu-Gỗ Hương Liền Khối Kèm Chân Đế</a>
+                                </h3>
+                                <div class="product-price">750,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/may-dan-tre/i2.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Mây tra đan - khay đĩa mây tre đan</a>
+                                </h3>
+                                <div class="product-price">720,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/do-go/i2.jpeg" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Bộ Tranh Phúc Đức Cá Chép – Gỗ Hương Dát Vàng
+                                    </a>
+                                </h3>
+                                <div class="product-price">3,500,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/hinhnuoc-cocchen/i3.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Bộ Ấm Trà Bằng Gốm Sứ Phong Cách Châu Âu</a>
+                                </h3>
+                                <div class="product-price">9,720,000₫</div>
+                            </div>
+                        </div>
+                        <div class="fs-swiper-item">
+                            <div class="product-thumbnail">
+                                <a href="" class="img-thumbnail">
+                                    <img src="../assets/img/product-thumbnail/hinhnuoc-cocchen/i5.webp" alt="">
+                                </a>
+                                <div class="smart">
+                                    <span>Giảm 50%</span>
+                                </div>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Bộ phin cà phê - Camellia - Màu cà phê</a>
+                                </h3>
+                                <div class="product-price">1,020,000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="outstanding-product">
+            <div class="container">
+                <div class="row">
+                    <div class="op-title">
+                        <h2>Sản phẩm nổi bật</h2>
+                        <div class="navbar navbar-expand">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" onclick="showTab(event, 'tab-1')">Tất cả</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="showTab(event, 'tab-2')">Bộ Trà</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="showTab(event, 'tab-3')">Cà phê</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="showTab(event, 'tab-4')">Phụ kiện trà cà phê</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-1" class="tab-content active">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bát sâu trong Silver Spruce</a>
+                                    </h3>
+                                    <div class="op-product-price">1,350,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/am-tra-bang-gom-su.webp"
+                                            alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ Ấm Trà Bằng Gốm Sứ Phong Cách Châu Âu</a>
+                                    </h3>
+                                    <div class="op-product-price">2,350,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/i2.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Lọ Bud Vase trong Silver Spruce</a>
+                                    </h3>
+                                    <div class="op-product-price">1,350,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/i5.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ phin cà phê - Camellia - Màu cà phê</a>
+                                    </h3>
+                                    <div class="op-product-price">1,028,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/khaymut.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ khay mứt 31.5cm Thiên Kim</a>
+                                    </h3>
+                                    <div class="op-product-price">1,688,500₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img style="padding: 32px 0;"
+                                            src="/assets/img/product-thumbnail/hinhnuoc-cocchen/Bộ trà 0.38 L - GASTROLINE - Đồng Tâm XL.webp"
+                                            alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ trà 0.38 L - GASTROLINE - Đồng Tâm XL</a>
+                                    </h3>
+                                    <div class="op-product-price">2,497,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/tuong-linh-vat/h1.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Rồng Xanh (Thuần Ngọc) 23.9 cm - Men Ngọc (bóng)</a>
+                                    </h3>
+                                    <div class="op-product-price">9,720,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/tuong-linh-vat/h2.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Tượng rồng Long Phù Đại Khánh - Men Ngọc (bóng)</a>
+                                    </h3>
+                                    <div class="op-product-price">2,376,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/bo-tra/i1.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ trà 0.35 L - IFP - Chỉ Vàng</a>
+                                    </h3>
+                                    <div class="op-product-price">764,500₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/bo-tra/i5.webp"
+                                            alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ trà 1.3 L - Hoàng Cung - Hồn Việt Vàng</a>
+                                    </h3>
+                                    <div class="op-product-price">8,712,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/bo-tra/i3.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ trà 1.3 L - Hoàng Cung - Sen Vàng</a>
+                                    </h3>
+                                    <div class="op-product-price">5.929.000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img style="padding: 67px 0;" src="/assets/img/product-thumbnail/bo-tra/i4.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ trà cao 0.8 L - Sago - Hoa Hồng Đen khắc nổi</a>
+                                    </h3>
+                                    <div class="op-product-price">4,000,000₫ </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/khaymut.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ khay mứt 31.5cm Thiên Kim</a>
+                                    </h3>
+                                    <div class="op-product-price">1,688,500₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img src="/assets/img/product-thumbnail/ca-phe/i1.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ phin cà phê - Camellia - Màu cà phê</a>
+                                    </h3>
+                                    <div class="op-product-price">1,028,500₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img style="padding: 67px 0;" src="/assets/img/product-thumbnail/ca-phe/i2.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ phin cà phê - Camellia - Trắng</a>
+                                    </h3>
+                                    <div class="op-product-price">361,900₫ </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="op-item-product">
+                                <div class="op-product-thumbnail">
+                                    <a href="" class="op-img-thumbnail">
+                                        <img style="padding: 67px 0;" src="/assets/img/product-thumbnail/ca-phe/3.webp" alt="">
+                                    </a>
+                                    <div class="op-action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="op-product-info">
+                                    <h3 class="op-product-name">
+                                        <a href="">Bộ phin cà phê - Camellia - Chỉ Vàng</a>
+                                    </h3>
+                                    <div class="op-product-price">454,300₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;" id="tab-4" class="tab-content">
+                    <p style="color: black;">Đang tải dữ liệu...</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-product-set">
+            <div class="container">
+                <h2 class="ps-title">Set sản phẩm nổi bật</h2>
+                <div class="row row-custom">
+                    <div class="col-lg-4">
+                        <div class="ps-thumb">
+                            <img src="/assets/img/img_set/image_set_1.webp" alt="">
+                            <div class="ps-thumb-dot" style="top: 36%; left: 28%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-left">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/tach-011.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Tách 0.11 L - Hoàng Cung - Sen Ngọc</h3>
+                                        <span>839.300₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-thumb-dot" style="top: 52%; left: 52%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-center">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/dia/dia-lot-hoang-gia.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Dĩa lót tách 13 cm - Hoàng Cung - Hồn Quê Vàng</h3>
+                                        <span>160.600₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-thumb-dot" style="top: 33%; left: 69%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-right">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/dia/dia-lot-tach.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Dĩa lót tách 12 cm - Camellia - Tứ Linh</h3>
+                                        <span>91.300₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-info-thumb">
+                                <h3><a href="">Set sản phẩm trang trí</a></h3>
+                                <div class="ps-price">
+                                     Giá: 
+                                    <span>5.850.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ps-thumb">
+                            <img src="/assets/img/img_set/image_set_2.webp" alt="">
+                            <div class="ps-thumb-dot" style="top: 47%; left: 29%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-left">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Bát sâu trong Silver Spruce</h3>
+                                        <span>1.590.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-thumb-dot" style="top: 56%; left: 75%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-right">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Lọ Bud Vase trong Silver Spruce</h3>
+                                        <span>2.500.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-info-thumb">
+                                <h3><a href="">Set sản phẩm gia dụng</a></h3>
+                                <div class="ps-price">
+                                     Giá: 
+                                    <span>10.850.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ps-thumb">
+                            <img src="/assets/img/img_set/image_set_3.webp" alt="">
+                            <div class="ps-thumb-dot" style="top: 66%; left: 20%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-left">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/bo-tra/tach-tra-chieu-doc-dao.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Tách Trà Chiều Độc Đáo</h3>
+                                        <span>2.300.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-thumb-dot" style="top: 32%; left: 66%;">
+                                <span class="ps-dot"></span>
+                                <div class="ps-product-dot ps-right">
+                                    <div class="ps-image">
+                                        <a href="#">
+                                            <img src="/assets/img/product-thumbnail/bo-tra/bo-am-tra-bang-gom-su-phong-cach-chau-au.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ps-info">
+                                        <h3>Bộ Ấm Trà Bằng Gốm Sứ Phong Cách Châu Âu</h3>
+                                        <span>5.400.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-info-thumb">
+                                <h3><a href="">Set ấm tách trà</a></h3>
+                                <div class="ps-price">
+                                     Giá: 
+                                    <span>6.050.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quà tặng doanh nghiệp -->
+        <section class="flash-sale corporate-gifts">
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        <!-- <div class="dot pulse-border"></div> -->
+                        <a href="">Quà tặng doanh nghiệp</a>
+                    </h2>
+                    <div class="thumbnail-flast">
+                        <!-- <div class="count-down">
+                            Chương trình đã kết thúc, hẹn gặp lại bạn trong thời gian sớm nhất!
+                        </div> -->
+                        <div class="button-control">
+                            <div id="corporate-gifts-prev" class="me-3">
+                                <i class="fa-solid fa-left-long"></i>
+                            </div>
+                            <div id="corporate-gifts-next">
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fs-swiper-container">
+                    <div class="fs-swiper-wrapper">
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/qua-tang-doanh-nghiep/ca-bia-trang.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Ca bia 0.36 L - Jasmine - Trắng</a>
+                                </h3>
+                                <div class="product-price">75.900₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/qua-tang-doanh-nghiep/ca-thap.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Ca thấp quai tròn 0.35 L - Jasmine - Trắng</a>
+                                </h3>
+                                <div class="product-price">93.500₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/qua-tang-doanh-nghiep/ca-thon-quai.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Ca thon quai số 7 0.33 L - Jasmine - Trắng</a>
+                                </h3>
+                                <div class="product-price">79.200₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/qua-tang-doanh-nghiep/ca-tra-trang.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Ca trà 0.30 L - Mẫu Đơn - Trắng</a>
+                                </h3>
+                                <div class="product-price">108.900₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/qua-tang-doanh-nghiep/ca-tra.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Ca trà 0.30 L - Mẫu Đơn IFP - Chỉ Vàng</a>
+                                </h3>
+                                <div class="product-price">176.000₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/do-go/i1.jpeg" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Đĩa Gỗ Chữ Hiếu-Gỗ Hương Liền Khối Kèm Chân Đế</a>
+                                </h3>
+                                <div class="product-price">750,000₫</div>
+                            </div>
+                        </div>
+                        <div class="corporate-gift-item ">
+                            <div class="gift-thumbnail">
+                                <a href="" class="gift-img">
+                                    <img height="170" src="/assets/img/product-thumbnail/may-dan-tre/i2.webp" alt="">
+                                </a>
+                                <div class="action">
+                                    <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                    <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="">Mây tra đan - khay đĩa mây tre đan</a>
+                                </h3>
+                                <div class="product-price">720,000₫</div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="mid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 ft-info">
+                        <h4 class="title-menu">THÔNG TIN</h4>
+                        <div class="group-address">
+                            <ul class="footer-ul">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>1900 6750</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>support@sapo.vn</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="title-menu">MẠNG XÃ HỘI</h4>
+                        <ul class="social footer-ul">
+                            <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
+                            <li><img src="assets/img/icon-social/google.webp" alt=""></li>
+                            <li><img src="assets/img/icon-social/youtube.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-5 ft-menu">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <h4 class="title-menu">CHÍNH SÁCH</h4>
+                                <ul class="list-menu hidden-mobile">
+                                    <li>Chính sách bảo mật</li>
+                                    <li>Chính sách vận chuyển</li>
+                                    <li>Chính sách đổi trả</li>
+                                    <li>Quy định sử dụng</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <h4 class="title-menu">HƯỚNG DẪN</h4>
+                                <ul class="list-menu hidden-mobile">
+                                    <li>Hướng dẫn mua hàng</li>
+                                    <li>Hướng dẫn thanh toán</li>
+                                    <li>Hướng dẫn giao vận</li>
+                                    <li>Điều khoản dịch vụ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4 class="title-menu">ĐĂNG KÝ NHẬN TIN</h4>
+                        <span>Đăng ký ngay! Để nhận thật nhiều ưu đãi</span>
+                        <form action="">
+                            <input type="text">
+                            <button>ĐĂNG KÝ</button>
+                        </form>
+                        <h4 class="title-menu">HÌNH THỨC THANH TOÁN</h4>
+                        <ul class="payment footer-ul">
+                            <li><img src="/assets/img/icon-payment/payment_1.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-payment/payment_2.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-payment/payment_3.webp" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/home.js"></script>
+
+</body>
+
+</html>
