@@ -130,7 +130,7 @@ body {
     }
 
     .swiper-slide .thumb-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -202,8 +202,7 @@ body {
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding-top: 30px;
 }
 
 .clients .swiper {
@@ -237,6 +236,13 @@ body {
 
 .swiper-slide .thumb-title {
     text-align: center;
+    h3 {
+        font-size: 20px;
+    }
+    span {
+        font-weight: 500;
+        color: #808080;
+    }
 }
 
 .swiper-slide a:hover .thumb-title {
@@ -388,6 +394,9 @@ body {
 .section-banner .banner-img img {
     width: 100%;
     border-radius: 15px;
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    transition: all 0.5s ease;
 }
 
 @media (max-width: 600px) {
@@ -1206,4 +1215,269 @@ body {
     .corporate-gift-item {
         width: 196px;
     }
+}
+
+/*--------------------------------------------------------------
+# Start section artist
+--------------------------------------------------------------*/
+
+.section-artists {
+    background-image: url(/assets/img/background/may.webp);
+    background-size: cover;
+
+    .sa-title {
+        text-align: left;
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    .job {
+        text-align: center;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 500;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        width: 40px;
+        height: 40px;
+        list-style-type: none;
+        margin-bottom: 2px;
+        a {
+            transition: color 0.5s ease; /* Thêm chuyển tiếp màu trong 0.5 giây */
+        }
+    }
+
+    li:hover {
+        a {
+            color: #ca6f04;
+        }
+    }
+
+    i {
+        font-size: 40px;
+    }
+    .sa-thumb {
+        position: relative;
+
+        img {
+            width: 95%;
+            border-radius: 10px;
+        }
+
+        .sa-contact {text-align: center;
+            position: absolute;
+            top: 250px;
+            right: 0;
+            padding: 2px 2px 0 2px;
+            border-radius: 10px;
+            z-index: 99;
+            background-color: #fff;
+        }
+
+    }
+
+
+    .facebook {
+        color: #3B5998;
+    }
+    .youtube {
+        color : #ff0000;
+    }
+    .instagram {
+        color: #d6249f;
+    }
+
+}
+    .sa-content {
+        text-align: left;
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #616161;
+    }
+    
+    .name {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+    }
+
+/*--------------------------------------------------------------
+# End section artist
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start section blog
+--------------------------------------------------------------*/
+
+.section-blog {
+
+    .item-blog {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .info-blog {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                font-weight: 800;
+                font-size: 18px;
+                color: #000;
+                margin: 0 0 10px;
+
+                height: calc(1em* 1.4* 2);
+            }
+
+            h3:hover a {
+                color: #CA6F04;
+            }
+
+            a {
+                transition: color 0.25s ease; /* Thêm chuyển tiếp màu trong 0.5 giây */
+            }
+            
+            .see {
+                color: #ca6f04;
+                font-size: 16px;
+                position: relative;
+                padding-bottom: 5px;
+                margin-top: 10px;
+            }
+
+            .see::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px; /* Khoảng cách từ chữ đến đường chỉ */
+                width: 0;
+                height: 2px; /* Độ dày của đường chỉ */
+                background-color: #ca6f04; /* Màu vàng của đường chỉ */
+                transition: width 0.3s ease; /* Thời gian và kiểu hiệu ứng */
+            }
+
+            .see:hover::after {
+                width: 100%; /* Độ dài của đường chỉ khi hover */
+            }
+        }
+
+        .time-post-blog {
+            display: inline-block;
+            background-color: #CA6F04;
+            color: #fff;
+            padding: 3px 6px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+}
+
+.see-more {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    font-size: 16px;
+    
+    a {
+        background-color: #CA6F04;
+        display: inline-block;
+        color: #fff;
+        padding: 8px 32px;
+        border: 0;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.5s, box-shadow 0.5s; /* Thêm dòng này để thêm hiệu ứng chuyển đổi */
+    }
+
+    a:hover {
+        background-color: #985403;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.section-contact {
+
+    background-image: url(/assets/img/background/flash-sale-bg.webp);
+    background-color: #f3eee4;
+
+    .title-contact {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .link-instagram {
+        text-align: center;
+        display: block;
+        color: #ca6f04;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .insta-image {
+        padding-bottom: 100%;
+        overflow: hidden;
+        height: auto;
+        display: block;
+        position: relative;
+        border-radius: 15px;
+
+        .insta-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .insta-a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+        }
+    }
+
+    .insta-image:hover {
+        .insta-a {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.6);
+            
+            i {
+                font-size: 60px;
+                color: #fff;
+            }
+        }
+    }
+    
 }
