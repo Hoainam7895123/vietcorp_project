@@ -1,0 +1,67 @@
+.body-wrap {
+    font-family: "Quicksand",sans-serif !important;
+    padding-top: 90px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-group {
+    display: flex;
+}
+
+.contact-group:hover p {
+    cursor: pointer;
+    color: #ff8800;
+    transition: all .4s ease;
+}
+
+.contact-info i {
+    font-size: 24px;
+    color: #ff8800;
+}
+
+.icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ca6f04;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    display: block;
+}
+
+h4 {
+    font-family: "Quicksand",sans-serif;
+    font-weight: 500;
+}
+
+.title h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.form-section {
+    margin-top: 30px;
+}
+
+.map-section {
+    margin-top: 20px;
+}
+
+
+.btn {
+    background: #ca6f04;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #009b50;;
+}

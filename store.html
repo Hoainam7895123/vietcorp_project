@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietCorp</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/store.css">
+    <link rel="stylesheet" href="assets/css/mySlide.css">
+    <style>
+        .bread-crumb {
+            background: url(assets/img/background/background1.png) center no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="home.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>VietCorp</h1>
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
+
+            <nav id="navbar" class="navbar navbar-custom">
+                <ul>
+                    <li><a href="home.html">TRANG CHỦ</a></li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown"><a href="category.html">
+                            <span>SẢN PHẨM</span>
+                            <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="navbav-sub-custom">
+                            <li><a href="search-result.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <span>Trà - cà phê</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Bộ Trà</a></li>
+                                    <li><a href="#">Cà phê</a></li>
+                                    <li><a href="#">Phụ kiện trà - cà phê</a></li>
+                                    <li><a href="#">Phụ kiện cà phê</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Mây đan tre</a></li>
+                            <li><a href="#">Sứ dưỡng sinh</a></li>
+                            <li><a href="#">Phòng ăn</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="news.html">TIN TỨC</a></li>
+                    <li><a href="store.html">CỬA HÀNG</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="position-relative">
+                <a href="#" class="mx-2"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+                <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                <a href="#" class="mx-2"><i class="fa-brands fa-shopify" aria-hidden="true"></i></a>
+
+                <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
+                        aria-hidden="true"></i></a>
+                <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
+
+                <!-- ======= Search Form ======= -->
+                <div class="search-form-wrap js-search-form-wrap">
+                    <form action="search-result.html" class="search-form">
+                        <span class="icon bi-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="Search" class="form-control">
+                        <button class="btn js-search-close"><i class="fa-solid fa-xmark"></i></button>
+                    </form>
+                </div><!-- End Search Form -->
+
+            </div>
+
+        </div>
+
+    </header><!-- End Header -->
+
+    <div class="body-wrap">
+        <section class="bread-crumb">
+            <div class="container">
+                <div class="title-bread-crumb myFont">Cửa hàng</div>
+                <ul>
+                    <li>
+                        <a href="home.html" class="myFont">Trang chủ
+                            <i class="fa-solid fa-angle-right p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="myFont"> Cửa hàng </span>
+                    </li>
+                </ul>
+                <div class="danhmuc-breadcum">
+                    <div class="row align-items-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container mt-2">
+            <div class="row mb-4">
+                <div class="col-lg-6 mt-2">
+                    <input type="text" id="search" class="form-control" placeholder="Nhập tên cửa hàng bạn muốn tìm">
+                </div>
+                <div class="col-md-2 mt-2">
+                    <select id="city" class="dropdown-icon">
+                        <option value="all">Tất cả</option>
+                        <option value="HaNoi">Hà Nội</option>
+                        <option value="HoChiMinh">Hồ Chí Minh</option>
+                        <option value="DaNang">Đà Nẵng</option>
+                        <option value="BinhDuong">Bình Dương</option>
+                        <option value="CanTho">Cần Thơ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="store-list" class="store-list">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="map">
+                        <iframe class="rounded"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.473787966245!2d105.7351068!3d21.053731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2sHanoi%20University%20of%20Industry!5e0!3m2!1sen!2s!4v1717697766051!5m2!1sen!2s"
+                            width="100%" height="500px" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer mt-4">
+        <div class="mid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 ft-info">
+                        <h4 class="title-menu">THÔNG TIN</h4>
+                        <div class="group-address">
+                            <ul class="footer-ul">
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>1900 6750</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>support@sapo.vn</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="title-menu">MẠNG XÃ HỘI</h4>
+                        <ul class="social footer-ul">
+                            <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
+                            <li><img src="assets/img/icon-social/google.webp" alt=""></li>
+                            <li><img src="assets/img/icon-social/youtube.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-5 ft-menu">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <h4 class="title-menu">CHÍNH SÁCH</h4>
+                                <ul class="list-menu hidden-mobile">
+                                    <li>Chính sách bảo mật</li>
+                                    <li>Chính sách vận chuyển</li>
+                                    <li>Chính sách đổi trả</li>
+                                    <li>Quy định sử dụng</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <h4 class="title-menu">HƯỚNG DẪN</h4>
+                                <ul class="list-menu hidden-mobile">
+                                    <li>Hướng dẫn mua hàng</li>
+                                    <li>Hướng dẫn thanh toán</li>
+                                    <li>Hướng dẫn giao vận</li>
+                                    <li>Điều khoản dịch vụ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4 class="title-menu">ĐĂNG KÝ NHẬN TIN</h4>
+                        <span style="display: block ;margin-bottom: 15px;">Đăng ký ngay! Để nhận thật nhiều ưu
+                            đãi</span>
+                        <form class="form-register" action="">
+                            <input type="text" placeholder="Nhập địa chỉ email">
+                            <button>ĐĂNG KÝ</button>
+                        </form>
+                        <h4 class="title-menu">HÌNH THỨC THANH TOÁN</h4>
+                        <ul class="payment footer-ul">
+                            <li><img src="/assets/img/icon-payment/payment_1.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-payment/payment_2.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-payment/payment_3.webp" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/mySlide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        
+    </script>
+
+</body>
+
+</html>
