@@ -2,8 +2,13 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: abc;
+    src: url(/assets/lib/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 body {
-    color: rgba(33, 37, 41, 1);
+    font-family: abc;
 }
 
 a {
@@ -16,14 +21,6 @@ a:hover {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'EB Garamond', serif;
-}
 
 #main {
     margin-top: 90px;
@@ -33,7 +30,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-    padding: 40px 0;
+    padding: 20px 0;
     overflow: hidden;
 }
 
@@ -350,12 +347,14 @@ section {
     }
 }
 
-.navbar-custom li:hover > a {
-    color: #ca6f04;
-}
-
-.navbav-sub-custom li:hover > a {
-    color: #ca6f04;
+@media  (min-width :1279px) {
+    #header {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 1030;
+    }
 }
 
 .header {
@@ -443,7 +442,70 @@ section {
     scroll-margin-top: 70px;
 }
 
-/* footer */
+
+
+.navbar-custom li:hover > a {
+    color: #ca6f04;
+}
+
+.navbav-sub-custom li:hover > a {
+    color: #ca6f04 !important;
+}
+
+.menu-control {
+
+    position: relative;
+
+
+    .user-icon {
+        position: relative;
+    }
+    
+    .user-menu::after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 120px;
+    }
+
+    a:hover {
+        i {
+            color: #ca6f04 !important;
+        }
+
+        + div, div:hover {
+            display: block !important;
+            /* a:hover {
+                color: #ca6f04;
+            } */
+        }
+    }
+
+    .user-menu > a:hover {
+        color: #ca6f04 !important;
+    }
+
+    .user-menu {
+        display: none;
+        width: 150px;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        top: 35px;
+        left: -115px;
+        position: absolute;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Đổ bóng nhẹ */
+        text-align: left; 
+        a {
+            display: block;
+        }
+    }
+}
+
+/* <!-- ======= Footer ======= --> */
 
 .footer::before {
     position: absolute;
