@@ -14,37 +14,52 @@
 
 <body>
     <style>
-        
-        .content_extab .active{
-            display: block;
-        }
-    
-
-        .nav-tabs .nav-link {
-        border: none;
-        background-color: transparent;
+        .custom-group {
+            border: 1px solid rgb(215, 133, 1);
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
         }
 
-        /* Màu chữ và gạch chân */
+        .custom-group button:hover {
+            background-color: rgb(215, 133, 1);
+            color: white;
+        }
+        .custom-group input {
+            text-align: center;
+            flex: 1;
+        }
+
         .nav-tabs .nav-link {
             color: black;/* Màu chữ */
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
         }
 
-        /* Màu chữ và gạch chân khi hover */
+        .btn_add_cart:hover{
+            background-color: rgb(215, 133, 1) ;
+            color: #fff;
+        }
+
+        .btn_add_cart:hover svg path {
+            fill: white !important; 
+        }
+        
         .nav-tabs .nav-link:hover {
-            color: rgb(215, 133, 1); /* Màu chữ */
-            border-bottom-color: rgb(209, 154, 3); /* Màu gạch chân */
+            color: rgb(215, 133, 1); 
+            border-bottom-color: rgb(209, 154, 3); 
         }
 
-        /* Màu chữ và gạch chân khi được chọn */
         .nav-tabs .nav-link.active {
-        color: rgb(215, 133, 1); /* Màu chữ */
-        border-bottom-color: rgb(215, 133, 1); /* Màu gạch chân */
+        color: rgb(215, 133, 1); 
+        border-bottom-color: rgb(215, 133, 1); 
         }
 
         .small-icon{
-            width: 60px;
-            height: 50px;
+            width: 50px;
+            height: 30px;
         }
         .horizontal-divider {
         border-bottom: 1px solid #ccc;
@@ -76,207 +91,140 @@
           border: #ccc 1px solid;
         }
       </style>
-    <header class="header">
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <!-- Logo Section -->
-                <a class="navbar-brand" href="#">
-                    <img width="250" src="/assets/img/logo.png" alt="Company Logo">
-                </a>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-                <!-- Toggler for mobile view -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>VietCorp</h1>
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse navbar-custom" id="navbarNav">
-                    <ul class="navbar-nav mx-auto navbar-ul-1">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TRANG CHỦ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">GIỚI THIỆU</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                                SẢN PHẨM
-                            </a>
-                            <div class="sub-menu p-0">
-                                <ul class="level0 p-0 m-0 row">
-                                    <li class="level1">
-                                        <a href="">Gốm sứ mỹ nghệ</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Tượng linh vật</a></li>
-                                            <li class="level2"><a href="">Tượng trang trí</a></li>
-                                            <li class="level2"><a href="">Bình Hoa</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Đồ gỗ mỹ nghệ</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Bàn ghế gỗ</a></li>
-                                            <li class="level2"><a href="">Đồng hồ gỗ cao cấp</a></li>
-                                            <li class="level2"><a href="">Lục bình gỗ</a></li>
-                                            <li class="level2"><a href="">Thuyền gỗ trang trí</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Mây đan tre</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Mây</a></li>
-                                            <li class="level2"><a href="">Lục bình</a></li>
-                                            <li class="level2"><a href="">Cói</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Sứ dưỡng sinh</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Ly sứ dưỡng sinh</a></li>
-                                            <li class="level2"><a href="">Hộp sứ dưỡng sinh</a></li>
-                                            <li class="level2"><a href="">Đũa sứ</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Trà - cà phê</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Bộ trà</a></li>
-                                            <li class="level2"><a href="">Cà phê</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Phòng ăn</a>
-                                        <ul class="level1">
-                                            <li class="level2"><a href="">Tô - Chén - Đĩa</a></li>
-                                            <li class="level2"><a href="">Thổ - Khay</a></li>
-                                            <li class="level2"><a href="">Ca - Ly</a></li>
-                                        </ul>
-                                    </li>
+            <nav id="navbar" class="navbar navbar-custom">
+                <ul>
+                    <li><a href="/home.html">TRANG CHỦ</a></li>
+                    <li><a href="single-post.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown"><a href="category.html">
+                            <span>SẢN PHẨM</span>
+                            <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="navbav-sub-custom">
+                            <li><a href="product/gom-su-my-nghe.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
+                            <li class="dropdown">
+                                <a href="product/tra-ca-phe.html">
+                                    <span>Trà - cà phê</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Bộ Trà</a></li>
+                                    <li><a href="#">Cà phê</a></li>
+                                    <li><a href="#">Phụ kiện trà - cà phê</a></li>
+                                    <li><a href="#">Phụ kiện cà phê</a></li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TIN TỨC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CỬA HÀNG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">LIÊN HỆ</a>
-                        </li>
-                    </ul>
-                    <!-- Control Icons -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"
-                                    aria-hidden="true"></i><span class="sr-only">Search</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-regular fa-user" aria-hidden="true"></i><span
-                                    class="sr-only">User</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i><span
-                                    class="sr-only">Wishlist</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-brands fa-shopify" aria-hidden="true"></i><span
-                                    class="sr-only">Shop</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                            </li>
+                            <li><a href="#">Mây đan tre</a></li>
+                            <li><a href="#">Sứ dưỡng sinh</a></li>
+                            <li><a href="#">Phòng ăn</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">TIN TỨC</a></li>
+                    <li><a href="contact.html">CỬA HÀNG</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="position-relative menu-control">
+                <a href="#" class="mx-2 user-icon">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <div class="user-menu">
+                        <a href="/user/register.html" class="register">Đăng ký</a>
+                        <a href="/user/login.html" class="login">Đăng nhập</a>
+                    </div>
+                </a>
+                <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                <a href="/user/cart.html" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
+
+
+                <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
+                        aria-hidden="true"></i></a>
+                <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
+
+                <!-- ======= User Menu ======= -->
+
+
+                <!-- ======= Search Form ======= -->
+                <div class="search-form-wrap js-search-form-wrap">
+                    <form action="search-result.html" class="search-form">
+                        <span class="icon bi-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="Search" class="form-control">
+                        <button class="btn js-search-close"><i class="fa-solid fa-xmark"></i></button>
+                    </form>
+                </div><!-- End Search Form -->
+
+            </div>
+
         </div>
-    </header>
+
+    </header><!-- End Header -->
 
     <div class="body-wrap">
-        <div style="height: 100px;"></div>
+    
         <!-- Slide -->
         <section class="bread-crumb">
             <div class="container">
                 <div class="title-bread-crumb">Ấm trà </div>
                 <ul>
                     <li>
-                        <a href="">Trang chủ
+                        <a href="/home.html">Trang chủ
                             <i class="fa-solid fa-angle-right p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">Khuyến mãi
+                        <a href="/product/tra-ca-phe.html">Trà - Cà phê
                             <i class="fa-solid fa-angle-right p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <span> Ấm trà </span>
+                        <span> Bộ trà 0.35 L - IFP - Chỉ Vàng </span>
                     </li>
                 </ul>
-                <div class="list-bread-crumb">
-                    <div class="container">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-list">
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_2.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Phòng ăn</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_3.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Sứ dưỡng sinh</div>
+                        </a>
+                        <a href="/product/tra-ca-phe.html">
+                            <img src="/assets/img/thumb/thumb_4.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Trà - cà phê</div>
+                        </a>
+                        <a href="/product/gom-su-my-nghe.html">
+                            <img src="/assets/img/thumb/thumb_6.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Gốm sứ mỹ nghệ</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_7.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Mây đan tre</div>
 
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_6.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Gốm sứ mỹ nghệ</div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_8.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Đồ gỗ mỹ nghệ</div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_7.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Mây đan tre</div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_3.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Sứ dưỡng dinh</div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_4.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Trà - cà phê</div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="">
-                                    <div class="list-thumb">
-                                        <img src="/assets/img/thumb/thumb_2.webp" alt="">
-                                    </div>
-                                    <div class="list-title">Phòng ăn</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                            <div>
-                                <button id="prev">
-                                    <i class="fa-solid fa-angle-left"></i>
-                                </button>
-                            </div>
-                            <div>
-                                <button id="next">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </button>
-                            </div>
-                        </div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_10.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Đồ gỗ mỹ nghệ</div>
+                        </a>
+                        
                     </div>
+                    <button id="next-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -315,7 +263,7 @@
                       <div class="col-12 col-md-6">
                         <div class="p-3 ">
                             <div class="detail">
-                                <h1 class="title-product">Bộ ấm trà</h1>
+                                <h1 class="title-product">Bộ trà 0.35 L - IFP - Chỉ Vàng</h1>
                                 <div class="inventory_quantity">
 
                                     <div class="thump-break horizontal-divider">
@@ -331,7 +279,7 @@
                                 <div class="price-box clearfix horizontal-divider">
                                     <div class="container-fluid">
                                         <span class="special-price">
-                                            <h3 class="price product-price text-warning">764.500₫</h3>
+                                            <h2 class="price product-price text-warning">764.500₫</h2>
                                             <meta itemprop="price" content="764500">
                                             <meta itemprop="priceCurrency" content="VND">
                                         </span> <!-- Giá Khuyến mại -->
@@ -352,27 +300,14 @@
                                         <div
                                             class="row justify-content-center align-items-center h-100"
                                         >
-                                            <div class="col">
-                                                <span class="input-group-text" style="width: 100px;" id="number">0</span>
-                                            </div>
-                                            <div class="col h-100">
-                                                <div class="col-2" style="width: 40px;">
-                                        
-                                                    <div class="row w-100">
-                                                        <button class="btn btn-secondary" id="increment">
-                                                            <span aria-hidden="true">&#x25B2;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="row w-100">
-                                                        <button class="btn btn-secondary" id="decrement">
-                                                            <span aria-hidden="true">&#x25BC;</span>
-                                                        </button>
-                                                    </div>    
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="row">
-                                                    <button type="submit" class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart" style="margin-left: 30px; border: #f6d74e 1px solid; width: 300px;">
+                                        <div class="col w-50 custom-group">
+                                            <button class="btn" id="decrement">-</button>
+                                            <input type="text" class="form-control" id="quantity" value="1">
+                                            <button class="btn" id="increment">+</button>
+                                        </div>
+                                            <div class="col w-50">
+                                                <div class="row align-items-center">
+                                                    <button type="submit" class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart" style="margin-left: 30px; border: rgb(215, 133, 1) 1px solid; width: 300px; ">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
                                                             <path d="M8.67209 21.2256C7.36141 21.1587 7.38609 19.3152 8.67203 19.2512C12.3147 19.2638 21.9225 19.2546 25.681 19.2572C26.709 19.2572 27.5885 18.5576 27.8197 17.5561L29.9539 8.3144C30.0761 7.78525 29.9527 7.23758 29.6155 6.8119C29.2783 6.38623 28.7735 6.13865 28.2305 6.13865C26.7185 6.13865 13.884 6.08055 7.31023 6.05435L6.26817 2.18786C6.01802 1.26388 5.17482 0.618591 4.21759 0.618591H0.879373C0.393725 0.618591 0 1.01232 0 1.49796C0 1.98361 0.393725 2.37734 0.879373 2.37734H4.21759C4.38239 2.37734 4.52748 2.48843 4.57034 2.64654L8.57237 17.4948C7.86869 17.5204 7.21327 17.8066 6.71624 18.3109C6.19401 18.8408 5.91355 19.5424 5.92651 20.2862C5.95242 21.774 7.18407 22.9843 8.67209 22.9843H9.95433C9.76374 23.3844 9.65675 23.8316 9.65675 24.3035C9.65675 26.0006 11.0375 27.3814 12.7347 27.3814C14.4319 27.3814 15.8126 26.0006 15.8126 24.3035C15.8126 23.8316 15.7056 23.3844 15.515 22.9843H21.0677C20.8773 23.3843 20.7703 23.8313 20.7703 24.303C20.7703 26.0002 22.1511 27.3809 23.8482 27.3809C25.5454 27.3809 26.9262 26.0001 26.9262 24.303C26.9262 23.8129 26.8105 23.3496 26.6059 22.9379C26.9538 22.8207 27.2048 22.4925 27.2048 22.105C27.2048 21.6194 26.811 21.2256 26.3254 21.2256H8.67209ZM14.0538 24.3035C14.0538 25.0309 13.462 25.6227 12.7346 25.6227C12.0072 25.6227 11.4154 25.0309 11.4154 24.3035C11.4154 23.5765 12.0066 22.985 12.7335 22.9844H12.7357C13.4626 22.985 14.0538 23.5765 14.0538 24.3035ZM23.8483 25.6222C23.1209 25.6222 22.5291 25.0304 22.5291 24.303C22.5291 23.5828 23.1093 22.9959 23.8269 22.9844H23.8697C24.5873 22.9959 25.1675 23.5828 25.1675 24.303C25.1675 25.0304 24.5757 25.6222 23.8483 25.6222ZM28.2369 7.90385C28.2421 7.91041 28.2414 7.91352 28.2403 7.91856L27.341 11.8127H24.2959L24.8145 7.88351L28.2234 7.89722C28.2286 7.89734 28.2318 7.89734 28.2369 7.90385ZM19.1709 17.4984V13.5715H22.2898L21.7716 17.4984H19.1709ZM14.8102 17.4984L14.2878 13.5715H17.4121V17.4984H14.8102ZM10.762 17.4984H10.7593C10.5449 17.4983 10.3561 17.3538 10.3003 17.1478L9.33642 13.5715H12.5135L13.0359 17.4984H10.762ZM14.0537 11.8128L13.5249 7.83807L17.4121 7.85372V11.8128H14.0537ZM19.1709 11.8128V7.86082L23.0414 7.87641L22.5219 11.8128H19.1709ZM11.7497 7.83086L12.2795 11.8127H8.86238L7.78486 7.81486L11.7497 7.83086ZM25.681 17.4984H23.5455L24.0638 13.5715H26.9348L26.106 17.1603C26.0601 17.3594 25.8853 17.4984 25.681 17.4984Z" fill="#FFA336"></path>
                                                         </svg>
@@ -388,23 +323,23 @@
                                         
                                     </div>
 
-                                    <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-4 align-items-center p-2" style="justify-content: space-between;">
-                                        <div class="col">
-                                            <div class="row" style="flex-wrap: nowrap;">
+                                    <div class="row row-cols-1 row-cols-lg-2 align-items-center p-2" style="justify-content: space-between; ">
+                                        <div class="col mw-50">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
                                                 <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_1.jpg?1710900044399" alt="Miễn phí giao hàng" class="small-icon">
                                                 <span>Miễn phí giao hàng</span>
                                             </div>
-                                            <div class="row" style="flex-wrap: nowrap;">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
                                                 <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_2.jpg?1710900044399" alt="Cam kết hàng chính hãng 100%" class="small-icon">
                                                 <span>Cam kết hàng chính hãng 100%</span>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="row" style="flex-wrap: nowrap;">
+                                        <div class="col mw-50">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
                                                 <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_3.jpg?1710900044399" alt="Đổi trả 7 ngày" class="small-icon">
                                                 <span>Đổi trả 7 ngày</span>
                                             </div>
-                                            <div class="row" style="flex-wrap: nowrap;">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
                                                 <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_4.jpg?1710900044399" alt="Mở hộp kiểm nha nhận hàng" class="small-icon">
                                                 <span>Mở hộp kiểm nha nhận hàng</span>
                                             </div>
@@ -439,8 +374,8 @@
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
                         <!-- Nội dung tab Mô tả sản phẩm -->
                         <p>Tuyển chọn từ những nguyên liệu quý hiếm mỗi sản phẩm của Misc Assortment đảm bảo những tiêu chí cao nhất về chất lượng. Sở hữu nhiều tính năng vượt trội siêu cứng chắc, mặt men sáng bóng, khó trầy xước. Misc Assortment được nhiều người ưa chuộng và lựa chọn bởi sự cao cấp, an toàn, bền đẹp và thân thiện với môi trường.<br>
-                            Bộ trà 0.35 l bao gồm:<br>
-                            - 1 Bình trà 0.35 L + nắp<br>
+                            Bộ trà bao gồm:<br>
+                            - 1 Bình trà + nắp<br>
                             - 6 Tách trà 0.07 L<br>
                             - 6 Dĩa lót tách 11 cm</p>
                             <p>Gốm sứ luôn là một trong những sản phẩm truyền thống được yêu thích bởi khách hàng trên toàn thế giới. Với độ bền cao và tính thẩm mỹ, gốm sứ đã trở thành vật dụng không thể thiếu trong cuộc sống hằng ngày của mọi gia đình. Thật tuyệt vời khi một sản phẩm có thể vừa có tính nghệ thuật vừa mang lại lợi ích cho cuộc sống.</p>
@@ -675,8 +610,8 @@
                             <ul class="social footer-ul">
                                 <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
                                 <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
-                                <li><img src="assets/img/icon-social/google.webp" alt=""></li>
-                                <li><img src="assets/img/icon-social/youtube.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-social/google.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-social/youtube (1).webp" alt=""></li>
                             </ul>
                         </div>
                         <div class="col-12 col-lg-5 ft-menu">
@@ -730,7 +665,7 @@
     <script>
         $(document).ready(function() {
             document.querySelectorAll('.carousel-thumbnails img').forEach((img, index) => {
-          img.addEventListener('click', () => {
+            img.addEventListener('click', () => {
             const carousel = new bootstrap.Carousel(document.querySelector('#carouselProductDetail'));
             carousel.to(index);
           });
@@ -741,30 +676,17 @@
 
         // Hàm initNumberGroup() để khởi tạo nhóm số
         function initNumberGroup() {
-            const $numberElement = $('#number');
-            const $incrementButton = $('#increment');
-            const $decrementButton = $('#decrement');
-
-            let number = 0;
-
-            // Update số khi bấm nút tăng
-            $incrementButton.click(function() {
-                number++;
-                updateNumber();
-            });
-
-            // Update số khi bấm nút giảm
-            $decrementButton.click(function() {
-                if (number > 0) {
-                    number--;
-                    updateNumber();
+            $('#decrement').on('click', function() {
+                let quantity = $('#quantity').val();
+                if (quantity > 1) {
+                    $('#quantity').val(--quantity);
                 }
             });
 
-            // Cập nhật số lên giao diện
-            function updateNumber() {
-                $numberElement.text(number);
-            }
+            $('#increment').on('click', function() {
+                let quantity = $('#quantity').val();
+                $('#quantity').val(++quantity);
+            });
         }
     });
     
