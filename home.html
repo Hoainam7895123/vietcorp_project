@@ -22,7 +22,7 @@
 
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <a href="index.html" class="logo d-flex align-items-center">
@@ -34,16 +34,16 @@
 
             <nav id="navbar" class="navbar navbar-custom">
                 <ul>
-                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="home.html">TRANG CHỦ</a></li>
                     <li><a href="single-post.html">GIỚI THIỆU</a></li>
                     <li class="dropdown"><a href="category.html">
                             <span>SẢN PHẨM</span>
                             <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="navbav-sub-custom">
-                            <li><a href="search-result.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="product/gom-su-my-nghe.html">Gốm sứ mỹ nghệ</a></li>
                             <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
                             <li class="dropdown">
-                                <a href="#">
+                                <a href="product/tra-ca-phe.html">
                                     <span>Trà - cà phê</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -66,14 +66,24 @@
                 </ul>
             </nav><!-- .navbar -->
 
-            <div class="position-relative">
-                <a href="#" class="mx-2"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+            <div class="position-relative menu-control">
+                <a href="#" class="mx-2 user-icon">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <div class="user-menu">
+                        <a href="/user/register.html" class="register">Đăng ký</a>
+                        <a href="/user/login.html" class="login">Đăng nhập</a>
+                    </div>
+                </a>
                 <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
-                <a href="#" class="mx-2"><i class="fa-brands fa-shopify" aria-hidden="true"></i></a>
+                <a href="/user/cart.html" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
+
 
                 <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
                         aria-hidden="true"></i></a>
                 <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
+
+                <!-- ======= User Menu ======= -->
+
 
                 <!-- ======= Search Form ======= -->
                 <div class="search-form-wrap js-search-form-wrap">
@@ -114,103 +124,66 @@
                             Bộ sưu tập
                         </h3>
                         <h5 style="
-                      font-size: 105px;
+                      font-size: 135px;
                       margin-top: -5%;
                       color: white;
-                      font-family: 'Allura', cursive;
+                      font-family: Allura;
                       font-weight: 300;
                     ">
                             Ngược dòng lịch sử
                         </h5>
-                        <a style="
-                      padding: 10px 30px;
-                      border-radius: 23px;
-                      color: black;
-                      background-color: white;
-                      cursor: pointer;
-                      font-weight: 600;
-                      text-transform: uppercase;
-                    ">
+                        <a 
+                     class="khampha">
                             Khám phá ngay
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-out">
+        <section class="mb-4">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-list">
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_2.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Phòng ăn</div>
+                            <span class="so-luong-san-pham">+ 30 sản phẩm</span>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_3.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Sứ dưỡng sinh</div>
+                            <span class="so-luong-san-pham">+ 20 sản phẩm</span>              
+                        </a>
+                        <a href="/product/tra-ca-phe.html">
+                            <img src="/assets/img/thumb/thumb_4.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Trà - cà phê</div>
+                            <span class="so-luong-san-pham">+ 10 sản phẩm</span>
+                        </a>
+                        <a href="/product/gom-su-my-nghe.html">
+                            <img src="/assets/img/thumb/thumb_6.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Gốm sứ mỹ nghệ</div>
+                            <span class="so-luong-san-pham">+ 50 sản phẩm</span>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_7.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Mây đan tre</div>
+                            <span class="so-luong-san-pham">+ 15 sản phẩm</span>
 
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_6.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Gốm sứ mỹ nghệ</h3>
-                                    <span>+ 0 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_10.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Đồ gỗ mỹ nghệ</h3>
-                                    <span>+ 20 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_7.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Mây đan tre</h3>
-                                    <span>+ 30 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_3.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Sứ dưỡng sinh</h3>
-                                    <span>+ 3 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_4.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Trà - cà phê</h3>
-                                    <span>+ 35 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-                                <div class="thumb-img">
-                                    <img src="../assets/img/thumb/thumb_2.webp" alt="">
-                                </div>
-                                <div class="thumb-title">
-                                    <h3>Phòng ăn</h3>
-                                    <span>+ 20 sản phẩm</span>
-                                </div>
-                            </a>
-                        </div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_10.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Đồ gỗ mỹ nghệ</div>
+                            <span class="so-luong-san-pham">+ 10 sản phẩm</span>
+                        </a>
+                        
                     </div>
+                    <button id="next-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
-
             </div>
         </section>
         <section class="section-banner">
@@ -1390,7 +1363,7 @@
                             <a class="insta-a" href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -1451,7 +1424,8 @@
                     </div>
                     <div class="col-12 col-lg-3">
                         <h4 class="title-menu">ĐĂNG KÝ NHẬN TIN</h4>
-                        <span style="display: block ;margin-bottom: 15px;">Đăng ký ngay! Để nhận thật nhiều ưu đãi</span>
+                        <span style="display: block ;margin-bottom: 15px;">Đăng ký ngay! Để nhận thật nhiều ưu
+                            đãi</span>
                         <form class="form-register" action="">
                             <input type="text" placeholder="Nhập địa chỉ email">
                             <button>ĐĂNG KÝ</button>
@@ -1474,8 +1448,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/home.js"></script>
-
-
 </body>
 
 </html>

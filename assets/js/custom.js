@@ -87,6 +87,31 @@ searchClose.addEventListener("click", (e) => {
 # End Header
 --------------------------------------------------------------*/
 
+document.addEventListener('DOMContentLoaded', function () {
+  var userIcon = document.querySelector('.user-icon');
+  var userMenu = document.querySelector('.user-menu');
+
+  userIcon.addEventListener('mouseenter', function () {
+      userMenu.style.display = 'block';
+  });
+
+  userIcon.addEventListener('mouseleave', function () {
+      setTimeout(function () {
+          if (!userMenu.matches(':hover')) {
+              userMenu.style.display = 'none';
+          }
+      }, 200);
+  });
+
+  userMenu.addEventListener('mouseleave', function () {
+      userMenu.style.display = 'none';
+  });
+
+  userMenu.addEventListener('mouseenter', function () {
+      userMenu.style.display = 'block';
+  });
+});
+
 
 function rotate() {
     $('.rotating-bg').css({ transform: 'rotate(0deg)' }).animate({ borderSpacing: 360 }, {
