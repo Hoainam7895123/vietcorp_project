@@ -1,0 +1,120 @@
+.card {
+    margin: 12px 0;
+    border-radius: 10px
+}
+
+.image-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    max-height: 250px !important;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all .5s ease-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+
+}
+
+.card-body {
+    padding: 8px 16px 16px;
+    ;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-date {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    font-weight: bold;
+}
+
+.card-link:hover {
+    transition: all .3s ease-out;
+    color: #ca6f04;
+}
+
+.link-more {
+    position: relative;
+    font-weight: bold;
+    color: #ca6f04;
+}
+
+.link-more:hover {
+    color: #ca6f04;
+}
+
+.link-more::before {
+    content: "";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: #ca6f04;
+    transition: all 200ms linear 0s;
+}
+
+.link-more:hover::before {
+    width: 100%;
+}
+
+.title-list {
+    font-weight: bold;
+    margin: 12px 0;
+    ;
+}
+
+.list-group-item {
+    font-weight: 500;
+    border: none !important;
+}
+
+.list-group-item:hover a,
+.list-group-item:hover {
+    transition: all .3s ease-out;
+    color: #ca6f04;
+}
+
+.list-group-item::before {
+    content: "+";
+    float: right;
+}
+.post-item {
+    padding: 8px 16px;
+}
+.post-item:hover .post-description {
+    transition: all .3s ease-out;
+    color: #ca6f04;
+}
+.post-container {
+    display: flex;
+}
+.post-image {
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.post-description {
+    font-weight: 500;
+    margin-left: 5px;
+    text-align: justify;
+}
