@@ -1,32 +1,3 @@
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .querySelectorAll(".dropdown-submenu .dropdown-toggle")
-    .forEach(function (element) {
-      element.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        this.nextElementSibling.classList.toggle("show");
-      });
-    });
-
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".dropdown-menu")) {
-      document
-        .querySelectorAll(".dropdown-submenu .dropdown-menu")
-        .forEach(function (menu) {
-          menu.classList.remove("show");
-        });
-    }
-  });
-});
-
-/*--------------------------------------------------------------
-# End Header
---------------------------------------------------------------*/
-
 let slideIndex = 0;
 
 const arrImages = [
@@ -150,13 +121,42 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+// new Swiper(".clients-slider", {
+//   speed: 400,
+//   loop: true,
+//   autoplay: {
+//     delay: 5000,
+//     disableOnInteraction: false,
+//   },
+//   slidesPerView: "auto",
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "bullets",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 40,
+//     },
+//     480: {
+//       slidesPerView: 3,
+//       spaceBetween: 60,
+//     },
+//     640: {
+//       slidesPerView: 4,
+//       spaceBetween: 80,
+//     },
+//     992: {
+//       slidesPerView: 6,
+//       spaceBetween: 120,
+//     },
+//   },
+// });
+
 new Swiper(".clients-slider", {
   speed: 400,
   loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
   slidesPerView: "auto",
   pagination: {
     el: ".swiper-pagination",
@@ -183,6 +183,7 @@ new Swiper(".clients-slider", {
   },
 });
 
+
 /*--------------------------------------------------------------
 # End Clients Section
 --------------------------------------------------------------*/
@@ -203,7 +204,6 @@ $(".op-item-product").hover(
 document.querySelector(".nav-link.active").click();
 
 function showTab(evt, tabName) {
-
   evt.preventDefault();
   var i, tabcontent, navlinks;
 
@@ -240,41 +240,15 @@ $(".corporate-gift-item").hover(
   }
 );
 
-const cg_wrapper = document.querySelector(".fs-swiper-container");
-const cg_carousel = document.querySelector(".fs-swiper-wrapper");
-const cg_arrowBtns = document.querySelectorAll(".button-control div");
-const cg_firstCardWidth = carousel.querySelector(".corporate-gift-item").offsetWidth;
-const cg_carouselChildrens = [...carousel.children];
-
-let xisDragging = false,
-  xisAutoPlay = true,
-  xstartX,
-  xstartScollLeft,
-  xtimeoutId;
-
-// Get the number of cards that can fit in the carousel at once
-let cg_cardPerView = Math.round(cg_carousel.offsetWidth / cg_firstCardWidth);
-// INsert copies of the last few cards to beginning of carousel for infinite scrolling
-cg_carouselChildrens
-  .slice(-cg_cardPerView)
-  .reverse()
-  .forEach((card) => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-  });
-
-// INsert copies of the first frw cards to end of carousel for infi...
-carouselChildrens
-  .slice(0, cg_cardPerView)
-  .reverse()
-  .forEach((card) => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-  });
-
-arrowBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    carousel.scrollLeft +=
-      btn.id === "corporate-gifts-prev" ? -cg_firstCardWidth : cg_firstCardWidth;
-  });
+/*--------------------------------------------------------------
+# Start contact
+--------------------------------------------------------------*/
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
 });
-
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
