@@ -1,18 +1,20 @@
 .body-wrap {
-    font-family: "Quicksand",sans-serif !important;
-    padding-top: 90px;
+    /* font-family: "Quicksand",sans-serif !important;
+    padding-top: 90px; */
 }
 
 .contact-info {
     margin-top: 20px;
 }
-
+.contact-info .info {
+    font-weight: 500;
+}
 .contact-group {
     display: flex;
 }
 
 .contact-group:hover p {
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #ff8800;
     transition: all .4s ease;
 }
@@ -38,8 +40,12 @@
     display: block;
 }
 
+.info.phone, .info.email {
+    cursor: pointer;
+}
+
 h4 {
-    font-family: "Quicksand",sans-serif;
+    /* font-family: "Quicksand",sans-serif; */
     font-weight: 500;
 }
 

@@ -4,38 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VietCorp</title>
+    <title>Cửa hàng</title>
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.5.2-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/news.css"> -->
     <link rel="stylesheet" href="assets/css/store.css">
-    <link rel="stylesheet" href="assets/css/mySlide.css">
     <style>
-        .bread-crumb {
-            background: url(assets/img/background/background1.png) center no-repeat;
-        }
     </style>
 </head>
+<!-- img blog -->
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
             <a href="home.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>VietCorp</h1>
-                <!-- <img src="assets/img/logo.png" alt=""> -->
             </a>
-
             <nav id="navbar" class="navbar navbar-custom">
                 <ul>
                     <li><a href="home.html">TRANG CHỦ</a></li>
@@ -44,10 +31,10 @@
                             <span>SẢN PHẨM</span>
                             <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="navbav-sub-custom">
-                            <li><a href="search-result.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="product/gom-su-my-nghe.html">Gốm sứ mỹ nghệ</a></li>
                             <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
                             <li class="dropdown">
-                                <a href="#">
+                                <a href="product/tra-ca-phe.html">
                                     <span>Trà - cà phê</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -70,15 +57,21 @@
                 </ul>
             </nav><!-- .navbar -->
 
-            <div class="position-relative">
-                <a href="#" class="mx-2"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+            <div class="position-relative menu-control">
+                <a href="#" class="mx-2 user-icon">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <div class="user-menu">
+                        <a href="/user/register.html" class="register">Đăng ký</a>
+                        <a href="/user/login.html" class="login">Đăng nhập</a>
+                    </div>
+                </a>
                 <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
-                <a href="#" class="mx-2"><i class="fa-brands fa-shopify" aria-hidden="true"></i></a>
+                <a href="/user/cart.html" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
 
                 <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
                         aria-hidden="true"></i></a>
                 <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
-
+                <!-- ======= User Menu ======= -->
                 <!-- ======= Search Form ======= -->
                 <div class="search-form-wrap js-search-form-wrap">
                     <form action="search-result.html" class="search-form">
@@ -97,24 +90,56 @@
     <div class="body-wrap">
         <section class="bread-crumb">
             <div class="container">
-                <div class="title-bread-crumb myFont">Cửa hàng</div>
+                <div class="title-bread-crumb">Cửa hàng</div>
                 <ul>
                     <li>
-                        <a href="home.html" class="myFont">Trang chủ
+                        <a href="home.html">Trang chủ
                             <i class="fa-solid fa-angle-right p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <span class="myFont"> Cửa hàng </span>
+                        <span> Cửa hàng </span>
                     </li>
                 </ul>
-                <div class="danhmuc-breadcum">
-                    <div class="row align-items-center">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-list">
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_2.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Phòng ăn</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_3.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Sứ dưỡng sinh</div>
+                        </a>
+                        <a href="/product/tra-ca-phe.html">
+                            <img src="/assets/img/thumb/thumb_4.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Trà - cà phê</div>
+                        </a>
+                        <a href="/product/gom-su-my-nghe.html">
+                            <img src="/assets/img/thumb/thumb_6.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Gốm sứ mỹ nghệ</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_7.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Mây đan tre</div>
+
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_10.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Đồ gỗ mỹ nghệ</div>
+                        </a>
+
                     </div>
+                    <button id="next-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
-        <div class="container mt-2">
+        <div class="container mt-2 mb-4">
             <div class="row mb-4">
                 <div class="col-lg-6 mt-2">
                     <input type="text" id="search" class="form-control" placeholder="Nhập tên cửa hàng bạn muốn tìm">
@@ -145,10 +170,8 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-    <footer class="footer mt-4">
+    <footer class="footer">
         <div class="mid-footer">
             <div class="container">
                 <div class="row">
@@ -174,8 +197,8 @@
                         <ul class="social footer-ul">
                             <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
                             <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
-                            <li><img src="assets/img/icon-social/google.webp" alt=""></li>
-                            <li><img src="assets/img/icon-social/youtube.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/google.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/youtube.webp" alt=""></li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-5 ft-menu">
@@ -223,20 +246,10 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/proudct.js"></script>
     <script src="assets/js/store.js"></script>
-    <script src="assets/js/mySlide.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-
-    <!-- Initialize Swiper -->
-    <script>
-        
-    </script>
-
+    <!-- <script src=""></script> -->
 </body>
 
 </html>

@@ -4,38 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VietCorp</title>
+    <title>Giới thiệu</title>
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.5.2-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/mySlide.css">
+    <!-- <link rel="stylesheet" href="assets/css/news.css"> -->
     <link rel="stylesheet" href="assets/css/about.css">
     <style>
-        .bread-crumb {
-            background: url(assets/img/background/background1.png) center no-repeat;
-        }
     </style>
 </head>
+<!-- img blog -->
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
             <a href="home.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>VietCorp</h1>
-                <!-- <img src="assets/img/logo.png" alt=""> -->
             </a>
-
             <nav id="navbar" class="navbar navbar-custom">
                 <ul>
                     <li><a href="home.html">TRANG CHỦ</a></li>
@@ -44,10 +31,10 @@
                             <span>SẢN PHẨM</span>
                             <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="navbav-sub-custom">
-                            <li><a href="search-result.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="product/gom-su-my-nghe.html">Gốm sứ mỹ nghệ</a></li>
                             <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
                             <li class="dropdown">
-                                <a href="#">
+                                <a href="product/tra-ca-phe.html">
                                     <span>Trà - cà phê</span>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -70,15 +57,21 @@
                 </ul>
             </nav><!-- .navbar -->
 
-            <div class="position-relative">
-                <a href="#" class="mx-2"><i class="fa-regular fa-user" aria-hidden="true"></i></a>
+            <div class="position-relative menu-control">
+                <a href="#" class="mx-2 user-icon">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <div class="user-menu">
+                        <a href="/user/register.html" class="register">Đăng ký</a>
+                        <a href="/user/login.html" class="login">Đăng nhập</a>
+                    </div>
+                </a>
                 <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
-                <a href="#" class="mx-2"><i class="fa-brands fa-shopify" aria-hidden="true"></i></a>
+                <a href="/user/cart.html" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
 
                 <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
                         aria-hidden="true"></i></a>
                 <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
-
+                <!-- ======= User Menu ======= -->
                 <!-- ======= Search Form ======= -->
                 <div class="search-form-wrap js-search-form-wrap">
                     <form action="search-result.html" class="search-form">
@@ -95,171 +88,101 @@
     </header><!-- End Header -->
 
     <div class="body-wrap">
-
-        <!-- Slide -->
         <section class="bread-crumb">
             <div class="container">
-                <div class="title-bread-crumb myFont">Giới thiệu</div>
+                <div class="title-bread-crumb">Giới thiệu</div>
                 <ul>
                     <li>
-                        <a href="home.html" class="myFont">Trang chủ
+                        <a href="home.html">Trang chủ
                             <i class="fa-solid fa-angle-right p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <span class="myFont"> Giới thiệu </span>
+                        <span> Giới thiệu </span>
                     </li>
                 </ul>
-                <div class="danhmuc-breadcum">
-                    <div class="row align-items-center">
-                        <!-- chịu chết chỗ này, lỗi tùm lum -->
-                        <!-- <div class="slide-container">
-                            <div class="slide-content swiper mySwiper">
-                                <div class="card-wrapper swiper-wrapper">
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_1.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Nồi sứ dưỡng sinh</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_2.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Phòng ăn</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_1.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Sứ dưỡng sinh</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_1.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Trà - cà phê</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_1.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Phụ kiện bàn ăn</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <a href="#">
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="assets/img/thumb/thumb_1.webp" alt="" class="card-img">
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="name">Sứ nghệ thuật</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                    
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <div class="card-image">
-                                                <img src="skin/images/7.jpg" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <h2 class="name">@@@</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next swiper-navBtn"></div>
-                                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-list">
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_2.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Phòng ăn</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_3.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Sứ dưỡng sinh</div>
+                        </a>
+                        <a href="/product/tra-ca-phe.html">
+                            <img src="/assets/img/thumb/thumb_4.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Trà - cà phê</div>
+                        </a>
+                        <a href="/product/gom-su-my-nghe.html">
+                            <img src="/assets/img/thumb/thumb_6.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Gốm sứ mỹ nghệ</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_7.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Mây đan tre</div>
+
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_10.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Đồ gỗ mỹ nghệ</div>
+                        </a>
+
+                    </div>
+                    <button id="next-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title">
+                                <p>Giới thiệu</p>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="page-title">
-                            <p>Giới thiệu</p>
-                        </div>
-                        <div class="page-content">
-                            <p>Ngành hàng gốm sứ là một trong những ngành hàng truyền thống của Việt Nam, có lịch sử
-                                phát triển lâu đời và chiếm vị trí quan trọng trong nền kinh tế và văn hóa của đất nước.
-                                Những sản phẩm gốm sứ được tạo ra từ các loại đất sét và được sục khí nung để tạo nên
-                                các sản phẩm làm đẹp cho người sử dụng.</p>
-                            <p>Trong ngành hàng gốm sứ, nghệ thuật sản xuất và sáng tác tiềm ẩn nhiều giá trị văn hóa.
-                                Những cốc chén, bình hoa, đồ trang trí trong gia đình đều khắc họa nét đẹp của văn hóa
-                                Việt Nam. Không chỉ được sử dụng trong đời sống thường ngày, những sản phẩm gốm sứ còn
-                                được sử dụng trong lễ hội, lịch sử dân tộc và nghi lễ tôn giáo.</p>
-                            <p>Thị trường ngành hàng gốm sứ không chỉ ở Việt Nam mà còn lan rộng ra tới các quốc gia
-                                khác trên thế giới. Nó đang được ưa chuộng do đặc tính thân thiện với môi trường và tính
-                                thẩm mỹ cao. Sự phát triển của sản phẩm gốm sứ cũng giúp nâng cao sản xuất công nghiệp
-                                Việt Nam và là nguồn thu nhập quan trọng cho người lao động, đóng góp tích cực cho nền
-                                kinh tế đất nước.</p>
-                            <p>Nghề gốm sứ còn mang trong mình những giá trị tinh thần, với hơn 70% lao động thuộc địa
-                                phương, đa số là những người có tài năng và niềm đam mê với nghệ thuật. Họ đã vượt qua
-                                những khó khăn để giữ gìn và truyền lại cho thế hệ sau những giá trị vỏn vẹn của nghề
-                                gốm sứ. Từ đó, nghề gốm sứ không chỉ là món đồ sử dụng như mọi người nghĩ, mà còn là một
-                                tinh hoa văn hóa và là niềm tự hào của dân tộc.</p>
-                            <p>Để góp phần duy trì và phát triển ngành hàng gốm sứ, các doanh nghiệp phải chú trọng đầu
-                                tư công nghệ sản xuất tiên tiến và quản lý chất lượng sản phẩm tốt hơn. Tuy nhiên, để
-                                phổ biến sản phẩm cho khách hàng, họ cần đào tạo và tạo ra nhiều mẫu mã đa dạng hơn, phù
-                                hợp với nhu cầu thị trường và văn hóa địa phương.</p>
-                            <p>Tổng kết lại, ngành hàng gốm sứ là ngành hàng truyền thống quan trọng của Việt Nam, đóng
-                                góp to lớn cho nền kinh tế và văn hóa của đất nước. Nó mang trong mình những giá trị
-                                tinh thần, và còn là niềm tự hào của người Việt. Để phát triển ngành này, chúng ta cần
-                                kết hợp các giá trị văn hóa với công nghệ sản xuất tiên tiến, giúp đáp ứng nhu cầu của
-                                khách hàng và bảo vệ môi trường.</p>
-
+                            <div class="page-content">
+                                <p>Ngành hàng gốm sứ là một trong những ngành hàng truyền thống của Việt Nam, có lịch sử
+                                    phát triển lâu đời và chiếm vị trí quan trọng trong nền kinh tế và văn hóa của đất nước.
+                                    Những sản phẩm gốm sứ được tạo ra từ các loại đất sét và được sục khí nung để tạo nên
+                                    các sản phẩm làm đẹp cho người sử dụng.</p>
+                                <p>Trong ngành hàng gốm sứ, nghệ thuật sản xuất và sáng tác tiềm ẩn nhiều giá trị văn hóa.
+                                    Những cốc chén, bình hoa, đồ trang trí trong gia đình đều khắc họa nét đẹp của văn hóa
+                                    Việt Nam. Không chỉ được sử dụng trong đời sống thường ngày, những sản phẩm gốm sứ còn
+                                    được sử dụng trong lễ hội, lịch sử dân tộc và nghi lễ tôn giáo.</p>
+                                <p>Thị trường ngành hàng gốm sứ không chỉ ở Việt Nam mà còn lan rộng ra tới các quốc gia
+                                    khác trên thế giới. Nó đang được ưa chuộng do đặc tính thân thiện với môi trường và tính
+                                    thẩm mỹ cao. Sự phát triển của sản phẩm gốm sứ cũng giúp nâng cao sản xuất công nghiệp
+                                    Việt Nam và là nguồn thu nhập quan trọng cho người lao động, đóng góp tích cực cho nền
+                                    kinh tế đất nước.</p>
+                                <p>Nghề gốm sứ còn mang trong mình những giá trị tinh thần, với hơn 70% lao động thuộc địa
+                                    phương, đa số là những người có tài năng và niềm đam mê với nghệ thuật. Họ đã vượt qua
+                                    những khó khăn để giữ gìn và truyền lại cho thế hệ sau những giá trị vỏn vẹn của nghề
+                                    gốm sứ. Từ đó, nghề gốm sứ không chỉ là món đồ sử dụng như mọi người nghĩ, mà còn là một
+                                    tinh hoa văn hóa và là niềm tự hào của dân tộc.</p>
+                                <p>Để góp phần duy trì và phát triển ngành hàng gốm sứ, các doanh nghiệp phải chú trọng đầu
+                                    tư công nghệ sản xuất tiên tiến và quản lý chất lượng sản phẩm tốt hơn. Tuy nhiên, để
+                                    phổ biến sản phẩm cho khách hàng, họ cần đào tạo và tạo ra nhiều mẫu mã đa dạng hơn, phù
+                                    hợp với nhu cầu thị trường và văn hóa địa phương.</p>
+                                <p>Tổng kết lại, ngành hàng gốm sứ là ngành hàng truyền thống quan trọng của Việt Nam, đóng
+                                    góp to lớn cho nền kinh tế và văn hóa của đất nước. Nó mang trong mình những giá trị
+                                    tinh thần, và còn là niềm tự hào của người Việt. Để phát triển ngành này, chúng ta cần
+                                    kết hợp các giá trị văn hóa với công nghệ sản xuất tiên tiến, giúp đáp ứng nhu cầu của
+                                    khách hàng và bảo vệ môi trường.</p>
+    
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
+            </section>
+        </div>
     </div>
-
-
     <footer class="footer">
         <div class="mid-footer">
             <div class="container">
@@ -286,8 +209,8 @@
                         <ul class="social footer-ul">
                             <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
                             <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
-                            <li><img src="assets/img/icon-social/google.webp" alt=""></li>
-                            <li><img src="assets/img/icon-social/youtube.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/google.webp" alt=""></li>
+                            <li><img src="/assets/img/icon-social/youtube.webp" alt=""></li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-5 ft-menu">
@@ -335,16 +258,9 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- <script src="assets/js/home.js"></script> -->
     <script src="assets/js/proudct.js"></script>
-    <script src="assets/js/mySlide.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-
+    <!-- <script src=""></script> -->
 </body>
 
 </html>

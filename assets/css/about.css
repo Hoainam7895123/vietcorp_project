@@ -1,16 +1,13 @@
 html,
 body {
-    font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+
     position: relative;
     height: 100%;
 }
 
-.myFont {
-    font-family: "Quicksand", sans-serif;
-}
 
 .body-wrap {
-    padding-top: 90px;
+    /* padding-top: 90px; */
 }
 
 
