@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Trang chủ Admin</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        
+        
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container-xxl position-relative bg-gray d-flex p-0">
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+            <!-- Sidebar Start -->
+            <div class="sidebar">
+                <nav class="navbar bg-light navbar-light">
+                    <a href="home.html" class="navbar-brand mx-4 mb-3">
+                        <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Admin</h3>
+                    </a>
+                    <div class="d-flex align-items-center ms-4 mb-4">
+                        <div class="position-relative">
+                            <img class="rounded-circle" src="img/user.jfif" alt="" style="width: 40px; height: 40px;">
+                            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                        </div>
+                        <div class="ms-3">
+                            <h6 class="mb-0">User name</h6>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                    <div class="navbar-nav w-100">
+                        <a href="home.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                        <a href="#" class="nav-item nav-link active"><i class="fa fa-laptop me-2"></i>Quản Lý Sản phẩm</a>
+                        <a href="" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Quản Lý Danh Mục</a>
+                        <a href="" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Quản lý Đơn Hàng</a>
+                        <a href="" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Người Dùng</a>
+                        <a href="" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Thống kê, Báo cáo</a>
+                        
+                    </div>
+                </nav>
+            </div>
+            <!-- Sidebar End -->
+            
+            <!-- Content Start -->
+            <div class="content">
+                <!-- Navbar Start -->
+                <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                    <a href="home.html" class="navbar-brand d-flex d-lg-none me-4">
+                        <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                    </a>
+                    <a href="#" class="sidebar-toggler flex-shrink-0">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <form class="d-none d-md-flex ms-4">
+                        <input class="form-control border-0" type="search" placeholder="Tìm kiếm">
+                    </form>
+                    <div class="navbar-nav align-items-center ms-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-envelope me-lg-2"></i>
+                                <span class="d-none d-lg-inline-flex">Thư đến</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                                <a href="#" class="dropdown-item">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle" src="img/user.jfif" alt="" style="width: 40px; height: 40px;">
+                                        <div class="ms-2">
+                                            <h6 class="fw-normal mb-0">Có thư mới</h6>
+                                            <small>15 phút trước</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle" src="img/user.jfif" alt="" style="width: 40px; height: 40px;">
+                                        <div class="ms-2">
+                                            <h6 class="fw-normal mb-0">Có thư mới</h6>
+                                            <small>15 phút trước</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle" src="img/user.jfif" alt="" style="width: 40px; height: 40px;">
+                                        <div class="ms-2">
+                                            <h6 class="fw-normal mb-0">Có thư mới</h6>
+                                            <small>15 phút trước</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item text-center">Xem tất cả</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fa fa-bell me-lg-2"></i>
+                                <span class="d-none d-lg-inline-flex">Thông báo</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                                <a href="#" class="dropdown-item">
+                                    <h6 class="fw-normal mb-0">Thông báo mới</h6>
+                                    <small>15 phút trước</small>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    <h6 class="fw-normal mb-0">Thông báo mới</h6>
+                                    <small>15 phút trước</small>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    <h6 class="fw-normal mb-0">Thông báo mới</h6>
+                                    <small>15 phút trước</small>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item text-center">Xem tất cả thông báo</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <img class="rounded-circle me-lg-2" src="img/user.jfif" alt="" style="width: 40px; height: 40px;">
+                                <span class="d-none d-lg-inline-flex">User name</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                                <a href="#" class="dropdown-item">Thông tin chi tiết</a>
+                                <a href="#" class="dropdown-item">Cài đặt</a>
+                                <a href="#" class="dropdown-item">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar End -->
+
+
+                <div class="container mt-4">
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true"><h4 class="">Gốm sứ mỹ nghệ</h4></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false"><h4>Đồ gỗ mỹ nghệ</h4></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false"><h4>Trà - Cà phê</h4></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false"><h4>Mây đan tre</h4></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="false"><h4>Sứ dưỡng sinh</h4></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link tab-product-list" id="tab6-tab" data-bs-toggle="tab" data-bs-target="#tab6" type="button" role="tab" aria-controls="tab6" aria-selected="false"><h4>Phòng ăn</h4></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="button-container">
+                            <a href="Product-Create.html" class="btn btn_base normal_button btn-add " style="margin-left: 30px; border: rgb(215, 133, 1) 1px solid; width: 300px; ">
+                                Sản phẩm mới
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Tạo các nội dung tab -->
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                            <!-- content start -->
+                            <div class="container mt-2">
+                                <div class="col-12">
+                                    <div class="bg-light rounded h-100 p-4">
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center mh-50">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">Tên sản phẩm</th>
+                                                        <th scope="col">Mô tả</th>
+                                                        <th scope="col">Giá bán</th>
+                                                        <th scope="col">Chi phí sản xuất</th>
+                                                        <th scope="col">Số lượng tồn kho</th>
+                                                        <th scope="col">Minh họa</th>
+                                                        <th scope="col">Ngày thêm</th>
+                                                        <th scope="col"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <th>123A321</th>
+                                                        <td>Lọ Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <th>123A321</th>
+                                                        <td>chén Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <th>123A321</th>
+                                                        <td>Lọ Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <th>123A321</th>
+                                                        <td>chén Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <th>123A321</th>
+                                                        <td>Lọ Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <th>123A321</th>
+                                                        <td>chén Bud Vase</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end -->
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                            <!-- content start -->
+                            <div class="container mt-2">
+                                <div class="col-12">
+                                    <div class="bg-light rounded h-100 p-4">
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center mh-50">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">Tên sản phẩm</th>
+                                                        <th scope="col">Mô tả</th>
+                                                        <th scope="col">Giá bán</th>
+                                                        <th scope="col">Chi phí sản xuất</th>
+                                                        <th scope="col">Số lượng tồn kho</th>
+                                                        <th scope="col">Minh họa</th>
+                                                        <th scope="col">Ngày thêm</th>
+                                                        <th scope="col"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <th>123A321</th>
+                                                        <td>Combo 6 món Gỗ Hương - Khay trà Rồng Chầu</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i3.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <th>123A321</th>
+                                                        <td>Đĩa gỗ chữ hiếu - Gỗ hương liền khối kèm chân đế</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i1.jpeg" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <th>123A321</th>
+                                                        <td>Combo 6 món Gỗ Hương - Khay trà Rồng Chầu</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i3.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <th>123A321</th>
+                                                        <td>Đĩa gỗ chữ hiếu - Gỗ hương liền khối kèm chân đế</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i1.jpeg" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <th>123A321</th>
+                                                        <td>Combo 6 món Gỗ Hương - Khay trà Rồng Chầu</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i3.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <th>123A321</th>
+                                                        <td>Đĩa gỗ chữ hiếu - Gỗ hương liền khối kèm chân đế</td>
+                                                        <td> trong Silver Spruce</td>
+                                                        <td>2.500.000</td>
+                                                        <td>1.000.000</td>
+                                                        <td>123</td>
+                                                        <td><img src="/assets/img/product-thumbnail/do-go/i1.jpeg" alt="" class="img-thumbnail-for-admin"></td>
+                                                        <td>1/1/2024</td>
+                                                        <td>
+                                                            <div class="container row row-cols-3 g-2">
+                                                                <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                    Sửa
+                                                                </a>
+                                                                
+                                                                <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                    Xóa
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end -->
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+
+                            <div class="col-sm-12 col-xl-12">
+                                <div class="bg-light rounded h-100 p-4">
+                                    
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="true" aria-controls="flush-collapseOne">
+                                                    Bộ trà
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <!-- content start -->
+                                                    <div class="container mt-2">
+                                                        <div class="col-12">
+                                                            <div class="bg-light rounded h-100 p-4">
+                                                                
+                                                                <div class="table-responsive">
+                                                                    <table class="table align-items-center mh-50">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">STT</th>
+                                                                                <th scope="col">ID</th>
+                                                                                <th scope="col">Tên sản phẩm</th>
+                                                                                <th scope="col">Mô tả</th>
+                                                                                <th scope="col">Giá bán</th>
+                                                                                <th scope="col">Chi phí sản xuất</th>
+                                                                                <th scope="col">Số lượng tồn kho</th>
+                                                                                <th scope="col">Minh họa</th>
+                                                                                <th scope="col">Ngày thêm</th>
+                                                                                <th scope="col"></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">3</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">4</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">5</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">6</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- content end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Cà phê
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <!-- content start -->
+                                                    <div class="container mt-2">
+                                                        <div class="col-12">
+                                                            <div class="bg-light rounded h-100 p-4">
+                                                                
+                                                                <div class="table-responsive">
+                                                                    <table class="table align-items-center mh-50">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">STT</th>
+                                                                                <th scope="col">ID</th>
+                                                                                <th scope="col">Tên sản phẩm</th>
+                                                                                <th scope="col">Mô tả</th>
+                                                                                <th scope="col">Giá bán</th>
+                                                                                <th scope="col">Chi phí sản xuất</th>
+                                                                                <th scope="col">Số lượng tồn kho</th>
+                                                                                <th scope="col">Minh họa</th>
+                                                                                <th scope="col">Ngày thêm</th>
+                                                                                <th scope="col"></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">3</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">4</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">5</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">6</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- content end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Phụ kiện
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <!-- content start -->
+                                                    <div class="container mt-2">
+                                                        <div class="col-12">
+                                                            <div class="bg-light rounded h-100 p-4">
+                                                                
+                                                                <div class="table-responsive">
+                                                                    <table class="table align-items-center mh-50">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">STT</th>
+                                                                                <th scope="col">ID</th>
+                                                                                <th scope="col">Tên sản phẩm</th>
+                                                                                <th scope="col">Mô tả</th>
+                                                                                <th scope="col">Giá bán</th>
+                                                                                <th scope="col">Chi phí sản xuất</th>
+                                                                                <th scope="col">Số lượng tồn kho</th>
+                                                                                <th scope="col">Minh họa</th>
+                                                                                <th scope="col">Ngày thêm</th>
+                                                                                <th scope="col"></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">3</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">4</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">5</th>
+                                                                                <th>123A321</th>
+                                                                                <td>Lọ Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/loBudVase.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">6</th>
+                                                                                <th>123A321</th>
+                                                                                <td>chén Bud Vase</td>
+                                                                                <td> trong Silver Spruce</td>
+                                                                                <td>2.500.000</td>
+                                                                                <td>1.000.000</td>
+                                                                                <td>123</td>
+                                                                                <td><img src="/assets/img/product-thumbnail/hinhnuoc-cocchen/bat-xau.webp" alt="" class="img-thumbnail-for-admin"></td>
+                                                                                <td>1/1/2024</td>
+                                                                                <td>
+                                                                                    <div class="container row row-cols-3 g-2">
+                                                                                        <a href="Product-Edit.html" class="w-lg-33 w-md-100 text-reset col p-4 w-50">
+                                                                                            Sửa
+                                                                                        </a>
+                                                                                        
+                                                                                        <a href="#" class="w-lg-33 w-md-100 text-danger col p-4 w-50 delete-btn">
+                                                                                            Xóa
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- content end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                            <div class="all-product alert alert-warning">Sản phẩm đang được cập nhật</div>
+                        </div>
+                        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                            <div class="all-product alert alert-warning">Sản phẩm đang được cập nhật</div>
+                        </div>
+                        <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
+                            <div class="all-product alert alert-warning">Sản phẩm đang được cập nhật</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Xác nhận Xóa -->
+                <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="deleteConfirmModalLabel">Xác nhận xóa sản phẩm</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Bạn có chắc chắn muốn xóa sản phẩm sau đây?</p>
+                                <ul>
+                                    <li><strong>Tên sản phẩm:</strong> <span id="confirmProductName"></span>chén Bud Vase</li>
+                                    <li><strong>Mô tả:</strong> <span id="confirmProductDescription"></span>Mô tả</li>
+                                    <li><strong>Giá sản phẩm:</strong> <span id="confirmProductPrice">2.500.000</span></li>
+                                    <li><strong>Số lượng tồn kho:</strong> <span id="confirmStockQuantity">123</span></li>
+                                    <li><strong>Danh mục:</strong> <span id="confirmProductCategory"></span>Gốm sứ mỹ nghệ</li>
+                                    <li><strong>Hình Ảnh Minh Họa</strong>
+                                        <span id="oldProductImage" class="form-text text-muted d-flex" style="overflow-x: scroll;  flex-wrap: nowrap;">
+                                            <img src="https://placehold.co/100x100" class="m-2" alt="ảnh cũ">
+                                            <img src="https://placehold.co/100x100" class="m-2" alt="ảnh cũ">
+                                            <img src="https://placehold.co/100x100" class="m-2" alt="ảnh cũ">
+                                        </span></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <footer class="footer">
+                    <!-- Footer start -->
+                    <div class="container-fluid pt-4 px-4">
+                        <div class="bg-light rounded-top p-4">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 text-center text-sm-start">
+                                    <img src="/assets/img/background/logo.png" alt="Logo" style="width: 100px; height: auto;">
+                                    © <a href="#">VietCorp</a>, All Right Reserved. 
+                                </div>
+                                <div class="col-12 col-sm-6 text-center text-sm-end">
+                                    
+                                    Designed By <a href="#">Nhóm 10</a>
+                                <br>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer end -->
+                </footer>
+                
+
+            </div>
+            <!-- Content End -->
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+            
+        </div>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/chart/chart.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Khi người dùng nhấp vào tab
+                $('.nav-link.tab-product-list').on('click', function() {
+                    // Chuyển đổi tab
+                    $('.nav-link.tab-product-list').removeClass('active');
+                    $(this).addClass('active');
+                    
+                    // Hiển thị nội dung tab
+                    var target = $(this).attr('data-bs-target');
+                    $('.tab-pane').removeClass('show active');
+                    $(target).addClass('show active');
+                });
+
+
+                const currentProductInfo = {
+                    productName: $('#productName').val(),
+                    productDescription: $('#productDescription').val(),
+                    productPrice: $('#productPrice').val(),
+                    stockQuantity: $('#stockQuantity').val(),
+                    productCategory: $('#productCategory option:selected').text(),
+                };
+
+                // Khi người dùng nhấn nút "Xóa"
+                $('.delete-btn').click(function () {
+                    // Đặt thông tin sản phẩm vào modal
+                    $('#confirmProductName').text(currentProductInfo.productName);
+                    $('#confirmProductDescription').text(currentProductInfo.productDescription);
+                    $('#confirmProductPrice').text(currentProductInfo.productPrice + " VND");
+                    $('#confirmStockQuantity').text(currentProductInfo.stockQuantity + " cái");
+                    $('#confirmProductCategory').text(currentProductInfo.productCategory);
+
+                    // Hiển thị modal
+                    $('#deleteConfirmModal').modal('show');
+                });
+
+                // Xử lý khi người dùng nhấn "Xác nhận"
+                $('#confirmDeleteBtn').click(function () {
+                    // Logic xóa sản phẩm (gửi yêu cầu xóa đến server hoặc xóa khỏi danh sách hiển thị)
+                    alert("Sản phẩm đã được xóa!");
+
+                    // Ẩn modal sau khi xác nhận xóa
+                    $('#deleteConfirmModal').modal('hide');
+                });
+            });
+        </script>
+        
+        
+    </body>
+</html>
