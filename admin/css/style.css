@@ -4,6 +4,119 @@
     --dark: #191C24;
 }
 
+/* Container for the entire branch structure */
+.container-for-branch {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Styling each branch */
+.branch {
+    max-width: 500px;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #d3d3d3;
+}
+
+/* Styling each category */
+.category {
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #f8f9fa;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button group styling */
+.btn-group {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Horizontal line for subcategories */
+.line-horizontal {
+    position: absolute;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 20px;
+    left: -20px;
+    width: 20px;
+}
+
+/* Styling buttons */
+.btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Container for the heading */
+.container-lg {
+    padding: 20px;
+}
+
+.container-lg .container-for-branch {
+    margin-bottom: 20px;
+}
+
+/* Styling the heading */
+.container-lg .container-for-branch .branch:first-child {
+    margin-top: 0;
+}
+
+/* Add some margin to the main container */
+.container-lg {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Adjusting margin for nested branches */
+.branch .branch {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #d3d3d3;
+}
+
+/* Ensuring the main heading is prominent */
+.container-lg h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
 /*form*/
 .form-group {
     margin-bottom: 1.5rem;
@@ -23,6 +136,21 @@
     max-height: 100px;
     border: 1px solid #ddd;
     padding: 5px;
+}
+.category-form {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 15px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+.subcategory-form {
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+    background-color: #e9ecef;
 }
 
 

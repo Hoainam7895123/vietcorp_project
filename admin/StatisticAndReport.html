@@ -57,12 +57,12 @@
                         </div>
                     </div>
                     <div class="navbar-nav w-100">
-                        <a href="#" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Trang Chủ</a>
+                        <a href="home.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Trang Chủ</a>
                         <a href="Product-Management.html" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Quản Lý Sản phẩm</a>
                         <a href="Category-Management.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Quản Lý Danh Mục</a>
                         <a href="" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Quản lý Đơn Hàng</a>
                         <a href="" class="nav-item nav-link"><i class="fa fa-user me-2"></i>Người Dùng</a>
-                        <a href="StatisticAndReport.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Thống kê, Báo cáo</a>
+                        <a href="#" class="nav-item nav-link  active"><i class="fa fa-chart-bar me-2"></i>Thống kê, Báo cáo</a>
                         
                     </div>
                 </nav>
@@ -170,7 +170,7 @@
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                                 <i class="fa fa-chart-line fa-3x text-primary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Doanh thu hôm nay</p>
+                                    <p class="mb-2">Tổng doanh thu</p>
                                     <h6 class="mb-0">100.000.000 vnd</h6>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                                 <i class="fa fa-chart-bar fa-3x text-primary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Doanh số hôm nay</p>
+                                    <p class="mb-2">Tổng doanh số</p>
                                     <h6 class="mb-0">100</h6>
                                 </div>
                             </div>
@@ -188,17 +188,17 @@
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
                                 <i class="fa fa-chart-area fa-3x text-primary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Lợi nhuận hôm nay</p>
+                                    <p class="mb-2">Tổng lợi nhuận</p>
                                     <h6 class="mb-0">100.000.000 vnd</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3">
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="fa fa-chart-pie fa-3x text-primary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Tổng lợi nhuận Quý X</p>
-                                    <h6 class="mb-0">100.000.000 vnd</h6>
+                                <i class="fa fa-calendar fa-3x text-primary"></i>
+                                <div class="ms-3 col" style="overflow-x:hidden ">
+                                    <div class="row"><p class="mb-2 d-flex align-items-center" style="flex-wrap: nowrap;">Từ <input type="date" class="form-control m-2" id="start" name="start" ></p></div>
+                                    <div class="row"><p class="mb-2 d-flex align-items-center" style="flex-wrap: nowrap;">Đến <input type="date" class="form-control m-2" id="end" name="end"></p></div>
                                 </div>
                             </div>
                         </div>
@@ -212,8 +212,8 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Thi trường gần đây</h6>
-                                <a href="StatisticAndReport.html">Xem tất cả</a>
+                                <h6 class="mb-0">Thi trường</h6>
+                                
                             </div>
                             <canvas id="worldwide-sales"></canvas>
                         </div>
@@ -221,101 +221,39 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Doanh thu & Lợi Nhuận gần đây</h6>
-                                <a href="StatisticAndReport.html">Xem tất cả</a>
+                                <h6 class="mb-0">Doanh thu & Lợi Nhuận</h6>
+                                
                             </div>
                             <canvas id="salse-revenue"></canvas>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Tổng doanh số</h6>
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Danh số cụ thể</h6>
+                            <canvas id="doughnut-chart"></canvas>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
             <!-- Sales Chart End -->
 
 
-            <!-- Recent Sales Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Đơn hàng gần đây</h6>
-                        <a href="">Xem tất cả</a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col"></th>
-                                    <th scope="col">Ngày</th>
-                                    <th scope="col">Sản phẩm</th>
-                                    <th scope="col">Khách hàng</th>
-                                    <th scope="col">Số lượng</th>
-                                    <th scope="col">Trạng thái</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Đâ thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Chưa thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Đâ thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Chưa thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Đâ thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>Bình gốm</td>
-                                    <td>user</td>
-                                    <td>1</td>
-                                    <td>Chưa thanh toán</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Chi tiết</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="container row row-cols-2 w-100">
+                <div class="col w-50"></div>
+                <div class="col w-50">
+                    <button type="submit" id="btn-confirm" class="btn btn_base normal_button btn-add mt-4 float-end " style="margin-left: 30px; border: rgb(215, 133, 1) 1px solid; width: 300px; height: 50px;">Xuất File báo cáo</button>
                 </div>
             </div>
-            <!-- Recent Sales End -->
+
+
+            
 
 
                
