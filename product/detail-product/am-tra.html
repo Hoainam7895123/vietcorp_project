@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietCorp</title>
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/product.css">
+</head>
+
+<body>
+    <style>
+        .modal-content {
+            text-align: center;
+        }
+        .modal-content img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .custom-group {
+            
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .custom-group button:hover {
+            background-color: rgb(215, 133, 1);
+            color: white;
+        }
+        .custom-group input {
+            border: 1px solid rgb(215, 133, 1);
+            text-align: center;
+            flex: 1;
+        }
+
+        .nav-tabs .nav-link {
+            color: black;/* Màu chữ */
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
+        }
+
+        .btn_add_cart:hover{
+            background-color: rgb(215, 133, 1) ;
+            color: #fff;
+        }
+
+        .btn_add_cart:hover svg path {
+            fill: white !important; 
+        }
+        
+        .nav-tabs .nav-link:hover {
+            color: rgb(215, 133, 1); 
+            border-bottom-color: rgb(209, 154, 3); 
+        }
+
+        .nav-tabs .nav-link.active {
+        color: rgb(215, 133, 1); 
+        border-bottom-color: rgb(215, 133, 1); 
+        }
+
+        .small-icon{
+            width: 50px;
+            height: 30px;
+        }
+        .horizontal-divider {
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+        }
+        .carousel-container {
+          background-color: beige;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .carousel-inner img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .carousel-thumbnails {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+        }
+        .carousel-thumbnails img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          cursor: pointer;
+          margin: 5px;
+          border: #ccc 1px solid;
+        }
+      </style>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>VietCorp</h1>
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
+
+            <nav id="navbar" class="navbar navbar-custom">
+                <ul>
+                    <li><a href="/home.html">TRANG CHỦ</a></li>
+                    <li><a href="single-post.html">GIỚI THIỆU</a></li>
+                    <li class="dropdown"><a href="category.html">
+                            <span>SẢN PHẨM</span>
+                            <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="navbav-sub-custom">
+                            <li><a href="product/gom-su-my-nghe.html">Gốm sứ mỹ nghệ</a></li>
+                            <li><a href="#">Đồ gỗ mỹ nghệ</a></li>
+                            <li class="dropdown">
+                                <a href="product/tra-ca-phe.html">
+                                    <span>Trà - cà phê</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Bộ Trà</a></li>
+                                    <li><a href="#">Cà phê</a></li>
+                                    <li><a href="#">Phụ kiện trà - cà phê</a></li>
+                                    <li><a href="#">Phụ kiện cà phê</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Mây đan tre</a></li>
+                            <li><a href="#">Sứ dưỡng sinh</a></li>
+                            <li><a href="#">Phòng ăn</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">TIN TỨC</a></li>
+                    <li><a href="contact.html">CỬA HÀNG</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="position-relative menu-control">
+                <a href="#" class="mx-2 user-icon">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <div class="user-menu">
+                        <a href="/user/register.html" class="register">Đăng ký</a>
+                        <a href="/user/login.html" class="login">Đăng nhập</a>
+                    </div>
+                </a>
+                <a href="#" class="mx-2"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+                <a href="/user/cart.html" class="mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
+
+
+                <a href="#" class="mx-2 js-search-open"><i class="fa-solid fa-magnifying-glass"
+                        aria-hidden="true"></i></a>
+                <i class="fa-solid fa-list bi-list mobile-nav-toggle"></i>
+
+                <!-- ======= User Menu ======= -->
+
+
+                <!-- ======= Search Form ======= -->
+                <div class="search-form-wrap js-search-form-wrap">
+                    <form action="search-result.html" class="search-form">
+                        <span class="icon bi-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="Search" class="form-control">
+                        <button class="btn js-search-close"><i class="fa-solid fa-xmark"></i></button>
+                    </form>
+                </div><!-- End Search Form -->
+
+            </div>
+
+        </div>
+
+    </header><!-- End Header -->
+
+    <div class="body-wrap">
+    
+        <!-- Slide -->
+        <section class="bread-crumb">
+            <div class="container">
+                <div class="title-bread-crumb">Ấm trà </div>
+                <ul>
+                    <li>
+                        <a href="/home.html">Trang chủ
+                            <i class="fa-solid fa-angle-right p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/product/tra-ca-phe.html">Trà - Cà phê
+                            <i class="fa-solid fa-angle-right p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span> Bộ trà 0.35 L - IFP - Chỉ Vàng </span>
+                    </li>
+                </ul>
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-list">
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_2.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Phòng ăn</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_3.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Sứ dưỡng sinh</div>
+                        </a>
+                        <a href="/product/tra-ca-phe.html">
+                            <img src="/assets/img/thumb/thumb_4.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Trà - cà phê</div>
+                        </a>
+                        <a href="/product/gom-su-my-nghe.html">
+                            <img src="/assets/img/thumb/thumb_6.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Gốm sứ mỹ nghệ</div>
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_7.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Mây đan tre</div>
+
+                        </a>
+                        <a href="/product/product.html">
+                            <img src="/assets/img/thumb/thumb_10.webp" alt="img-1" class="image-item">
+                            <div class="list-title">Đồ gỗ mỹ nghệ</div>
+                        </a>
+                        
+                    </div>
+                    <button id="next-slide" class="slide-button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <content>
+            <div class="container">
+                <div class="row justify-content-center g-2 p-3">
+                    <div class="col-12 col-md-6">
+                        <div class=" ">
+                            <div class="container ">
+                                <div class="carousel-container w-100 h-100">
+                                    <div id="carouselProductDetail" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="/assets/img/product_detail/detail_product_1.webp" class="d-block w-100" style="width: 500px; height: 300px;" alt="Slide 1">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="/assets/img/product_detail/detail_product_2.webp" class="d-block w-100" style="width: 500px; height: 300px;" alt="Slide 2">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="/assets/img/product_detail/detail_product_3.webp" class="d-block w-100" style="width: 500px; height: 300px;" alt="Slide 3">
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                            
+                                <div class="carousel-thumbnails p-2">
+                                  <img src="/assets/img/product_detail/detail_product_1.webp"  data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" alt="Slide 1">
+                                  <img src="/assets/img/product_detail/detail_product_2.webp"  data-bs-target="#carouselExample" data-bs-slide-to="1" alt="Slide 2">
+                                  <img src="/assets/img/product_detail/detail_product_3.webp"  data-bs-target="#carouselExample" data-bs-slide-to="2" alt="Slide 3">
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="p-3 ">
+                            <div class="detail">
+                                <h1 class="title-product">Bộ trà 0.35 L - IFP - Chỉ Vàng</h1>
+                                <div class="inventory_quantity">
+
+                                    <div class="thump-break horizontal-divider">
+                                        <span class="mb-break inventory">
+                                            <span class="stock-brand-title">Tình trạng:</span>
+                                                    
+                                            <span class="a-stock">
+                                                Còn hàng
+                                            </span>
+                                           </span>
+                                        </div>
+                                </div>
+                                <div class="price-box clearfix horizontal-divider">
+                                    <div class="container-fluid">
+                                        <span class="special-price">
+                                            <h2 class="price product-price text-warning">764.500₫</h2>
+                                            <meta itemprop="price" content="764500">
+                                            <meta itemprop="priceCurrency" content="VND">
+                                        </span> <!-- Giá Khuyến mại -->
+                                        <span class="text-decoration-line-through ">
+                                            <span class="price product-price-old">
+                                                2.000.000₫
+                                            </span>
+                                            <meta itemprop="price" content="2000000">
+                                            <meta itemprop="priceCurrency" content="VND">
+                                        </span> <!-- Giás gốc -->
+                                    </div>
+                                    
+                                    <br><span class="save-price">Tiết kiệm:
+                                        <span class="price product-price-save text-danger">1.235.500₫</span>
+                                    </span> <!-- Tiết kiệm -->
+                                    
+                                    <div class="input-group number-group horizontal-divider" style="width: 100%;">
+                                        <div class="row justify-content-center align-items-center h-100">
+                                            <div class="col w-50 custom-group">
+                                                <input type="number" class="form-control" id="stockQuantity" name="stockQuantity" placeholder="1" required>
+                                            </div>
+                                            <div class="col w-50">
+                                                <div class="row align-items-center">
+                                                    <button id="add-to-cart" type="submit" class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart" style="margin-left: 30px; border: rgb(215, 133, 1) 1px solid; width: 300px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                                            <path d="M8.67209 21.2256C7.36141 21.1587 7.38609 19.3152 8.67203 19.2512C12.3147 19.2638 21.9225 19.2546 25.681 19.2572C26.709 19.2572 27.5885 18.5576 27.8197 17.5561L29.9539 8.3144C30.0761 7.78525 29.9527 7.23758 29.6155 6.8119C29.2783 6.38623 28.7735 6.13865 28.2305 6.13865C26.7185 6.13865 13.884 6.08055 7.31023 6.05435L6.26817 2.18786C6.01802 1.26388 5.17482 0.618591 4.21759 0.618591H0.879373C0.393725 0.618591 0 1.01232 0 1.49796C0 1.98361 0.393725 2.37734 0.879373 2.37734H4.21759C4.38239 2.37734 4.52748 2.48843 4.57034 2.64654L8.57237 17.4948C7.86869 17.5204 7.21327 17.8066 6.71624 18.3109C6.19401 18.8408 5.91355 19.5424 5.92651 20.2862C5.95242 21.774 7.18407 22.9843 8.67209 22.9843H9.95433C9.76374 23.3844 9.65675 23.8316 9.65675 24.3035C9.65675 26.0006 11.0375 27.3814 12.7347 27.3814C14.4319 27.3814 15.8126 26.0006 15.8126 24.3035C15.8126 23.8316 15.7056 23.3844 15.515 22.9843H21.0677C20.8773 23.3843 20.7703 23.8313 20.7703 24.303C20.7703 26.0002 22.1511 27.3809 23.8482 27.3809C25.5454 27.3809 26.9262 26.0001 26.9262 24.303C26.9262 23.8129 26.8105 23.3496 26.6059 22.9379C26.9538 22.8207 27.2048 22.4925 27.2048 22.105C27.2048 21.6194 26.811 21.2256 26.3254 21.2256H8.67209ZM14.0538 24.3035C14.0538 25.0309 13.462 25.6227 12.7346 25.6227C12.0072 25.6227 11.4154 25.0309 11.4154 24.3035C11.4154 23.5765 12.0066 22.985 12.7335 22.9844H12.7357C13.4626 22.985 14.0538 23.5765 14.0538 24.3035ZM23.8483 25.6222C23.1209 25.6222 22.5291 25.0304 22.5291 24.303C22.5291 23.5828 23.1093 22.9959 23.8269 22.9844H23.8697C24.5873 22.9959 25.1675 23.5828 25.1675 24.303C25.1675 25.0304 24.5757 25.6222 23.8483 25.6222ZM28.2369 7.90385C28.2421 7.91041 28.2414 7.91352 28.2403 7.91856L27.341 11.8127H24.2959L24.8145 7.88351L28.2234 7.89722C28.2286 7.89734 28.2318 7.89734 28.2369 7.90385ZM19.1709 17.4984V13.5715H22.2898L21.7716 17.4984H19.1709ZM14.8102 17.4984L14.2878 13.5715H17.4121V17.4984H14.8102ZM10.762 17.4984H10.7593C10.5449 17.4983 10.3561 17.3538 10.3003 17.1478L9.33642 13.5715H12.5135L13.0359 17.4984H10.762ZM14.0537 11.8128L13.5249 7.83807L17.4121 7.85372V11.8128H14.0537ZM19.1709 11.8128V7.86082L23.0414 7.87641L22.5219 11.8128H19.1709ZM11.7497 7.83086L12.2795 11.8127H8.86238L7.78486 7.81486L11.7497 7.83086ZM25.681 17.4984H23.5455L24.0638 13.5715H26.9348L26.106 17.1603C26.0601 17.3594 25.8853 17.4984 25.681 17.4984Z" fill="#FFA336"></path>
+                                                        </svg>
+                                                        Thêm vào giỏ
+                                                        
+                                                    </button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="cartModalLabel">Thông báo</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="/assets/img/product_detail/add-to-cart-success.jfif" alt="Giỏ hàng">
+                                                    <p>Đã thêm vào giỏ</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-cols-1 row-cols-lg-2 align-items-center p-2" style="justify-content: space-between; ">
+                                        <div class="col mw-50">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
+                                                <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_1.jpg?1710900044399" alt="Miễn phí giao hàng" class="small-icon">
+                                                <span>Miễn phí giao hàng</span>
+                                            </div>
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
+                                                <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_2.jpg?1710900044399" alt="Cam kết hàng chính hãng 100%" class="small-icon">
+                                                <span>Cam kết hàng chính hãng 100%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col mw-50">
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
+                                                <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_3.jpg?1710900044399" alt="Đổi trả 7 ngày" class="small-icon">
+                                                <span>Đổi trả 7 ngày</span>
+                                            </div>
+                                            <div class="row" style="flex-wrap: nowrap;align-items: center;">
+                                                <img src="//bizweb.dktcdn.net/100/485/241/themes/911577/assets/chinhsach_4.jpg?1710900044399" alt="Mở hộp kiểm nha nhận hàng" class="small-icon">
+                                                <span>Mở hộp kiểm nha nhận hàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+
+
+                </div>
+                
+            </div>
+
+            <div class="product-tab e-tabs not-dqtab mt-3 horizontal-divider" id="tab-product">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-1-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true"><h2> Mô tả sản phẩm</h2></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false"><h2>Hướng dẫn mua hàng</h2></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                        <!-- Nội dung tab Mô tả sản phẩm -->
+                        <p>Tuyển chọn từ những nguyên liệu quý hiếm mỗi sản phẩm của Misc Assortment đảm bảo những tiêu chí cao nhất về chất lượng. Sở hữu nhiều tính năng vượt trội siêu cứng chắc, mặt men sáng bóng, khó trầy xước. Misc Assortment được nhiều người ưa chuộng và lựa chọn bởi sự cao cấp, an toàn, bền đẹp và thân thiện với môi trường.<br>
+                            Bộ trà bao gồm:<br>
+                            - 1 Bình trà + nắp<br>
+                            - 6 Tách trà 0.07 L<br>
+                            - 6 Dĩa lót tách 11 cm</p>
+                            <p>Gốm sứ luôn là một trong những sản phẩm truyền thống được yêu thích bởi khách hàng trên toàn thế giới. Với độ bền cao và tính thẩm mỹ, gốm sứ đã trở thành vật dụng không thể thiếu trong cuộc sống hằng ngày của mọi gia đình. Thật tuyệt vời khi một sản phẩm có thể vừa có tính nghệ thuật vừa mang lại lợi ích cho cuộc sống.</p>
+                            <p>Nếu bạn đang tìm kiếm một bộ đồ ăn hoàn hảo làm tặng người thân, bạn bè hay muốn tạo bộ đồ ăn đẹp mắt cho gia đình mình, thì bộ đồ gốm sứ sẽ là một sự lựa chọn tuyệt vời để thể hiện tình cảm của bạn đến những người thân yêu của mình.</p>
+                            <p>&nbsp;Sản phẩm này được sản xuất với chất liệu gốm sứ cao cấp, với độ bền cao và khả năng chịu nhiệt tốt, cho phép bạn sử dụng trong nhiều năm liền mà không sợ hư hỏng. Đồng thời, gốm sứ cũng là một loại vật liệu không gây hại cho sức khỏe, nên bạn có thể yên tâm sử dụng khi dùng để nấu ăn và trang trí.&nbsp;</p>
+                            <p>Mỗi bộ đồ ăn gốm sứ được thiết kế rất tinh tế với nhiều họa tiết và cấu trúc khác nhau, mang lại sự tươi trẻ và phong cách độc đáo cho bàn ăn của bạn. Bạn sẽ có nhiều sự lựa chọn để chọn cho mình bộ đồ ăn ưng ý nhất với phong cách hiện đại, thanh lịch hoặc truyền thống...</p>
+                            <p>Ngoài ra, sản phẩm còn được thiết kế rất sang trọng và đẹp mắt, giúp bạn trang trí cho bàn ăn của mình hoàn hảo. Bộ đồ ăn gốm sứ không chỉ là một vật dụng thiết yếu, mà nó còn mang lại nét đẹp đặc biệt cho căn bếp và chính nhà bạn.&nbsp;</p>
+
+                            <p>Trọn bộ đồ ăn gốm sứ gồm có đĩa, tô, đĩa dĩa, chén, ly và các vật dụng khác, giúp bạn có thể tổ chức một bữa tiệc đặc biệt cho gia đình và bạn bè của mình. Bộ sản phẩm này có thể làm quà tặng cho người thân trong ngày sinh nhật, Giáng sinh, lễ kỉ niệm hoặc đơn giản là món quà để thể hiện tình cảm của bạn đến những người thân yêu nhất.</p>
+                            <p>Với lòng đam mê và kỹ năng chuyên môn, những sản phẩm gốm sứ của chúng tôi luôn mang đến sự hài lòng cho khách hàng. Tất cả sản phẩm đều được thiết kế và làm thủ công bởi các thợ thủ công có nhiều kinh nghiệm để đảm bảo chất lượng sản phẩm tốt nhất...</p>
+                            <p>Hãy đến với chúng tôi để trang trí cho ngôi nhà của bạn bằng những sản phẩm gốm sứ độc đáo và đẹp mắt nhất. Chúng tôi luôn sẵn sàng cung cấp cho bạn</p>
+                    </div>
+                    <div class="tab-pane fade hide" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                        <!-- Nội dung tab Hướng dẫn mua hàng -->
+                        <div class="rte">
+				
+                            <p><strong>Bước 1:</strong>&nbsp;Truy cập website và lựa chọn sản phẩm&nbsp;cần mua</p>
+            <p><strong>Bước 2:</strong>&nbsp;Click và sản phẩm muốn mua, màn hình hiển thị ra pop up với các lựa chọn sau</p>
+            <p>Nếu bạn muốn tiếp tục mua hàng: Bấm vào phần tiếp tục mua hàng để lựa chọn thêm sản phẩm vào giỏ hàng</p>
+            <p>Nếu bạn muốn xem giỏ hàng để cập nhật sản phẩm: Bấm vào xem giỏ hàng</p>
+            <p>Nếu bạn muốn đặt hàng và thanh toán cho sản phẩm này vui lòng bấm vào: Đặt hàng và thanh toán</p>
+            <p><strong>Bước 3:</strong>&nbsp;Lựa chọn thông tin tài khoản thanh toán</p>
+            <p>Nếu bạn đã có tài khoản vui lòng nhập thông tin tên đăng nhập là email và mật khẩu vào mục đã có tài khoản trên hệ thống</p>
+            <p>Nếu bạn chưa có tài khoản và muốn đăng ký tài khoản vui lòng điền các thông tin cá nhân để tiếp tục đăng ký tài khoản. Khi có tài khoản bạn sẽ dễ dàng theo dõi được đơn hàng của mình</p>
+            <p>Nếu bạn muốn mua hàng mà không cần tài khoản vui lòng nhấp chuột vào mục đặt hàng không cần tài khoản</p>
+            <p><strong>Bước 4:</strong>&nbsp;Điền các thông tin của bạn để nhận đơn hàng, lựa chọn hình thức thanh toán và vận chuyển cho đơn hàng của mình</p>
+            <p><strong>Bước 5:</strong>&nbsp;Xem lại thông tin đặt hàng, điền chú thích và gửi đơn hàng</p>
+            <p>Sau khi nhận được đơn hàng bạn gửi chúng tôi sẽ liên hệ bằng cách gọi điện lại để xác nhận lại đơn hàng và địa chỉ của bạn.</p>
+            <p>Trân trọng cảm ơn.</p>	
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <h2 class="mt-4">Sản phẩm liên quan</h2>
+                <div class="products-view binh-hoa">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h1.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình bách hoa ống khói nhỏ, gốm mỹ nghệ Nam bộ, H30 cm</a>
+                                    </h3>
+                                    <div class="product-price">1,350,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h2.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình bầu bách hoa nhỏ, gốm mỹ nghệ Nam Bộ, C22 x R20cm</a>
+                                    </h3>
+                                    <div class="product-price">1,200,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h3.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình cắm hoa, họa tiết khắc chìm Bách Hoa, C14xR8, gốm mỹ nghệ</a>
+                                    </h3>
+                                    <div class="product-price">1,800,000 ₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h4.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình gốm Ánh kim, sản phẩm độc bản, nghệ nhân June, Xưởng Thủ Biên</a>
+                                    </h3>
+                                    <div class="product-price">2,800,000 ₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h5.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình gốm độc bản, nghệ nhân June, Xưởng Thủ Biên</a>
+                                    </h3>
+                                    <div class="product-price">4,000,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h6.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình gốm độc bản, nghệ nhân June, Xưởng Thủ Biên, H30cm</a>
+                                    </h3>
+                                    <div class="product-price">1,702,000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h7.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình tú cầu bách hoa lớn, gốm thủ công mỹ nghệ Nam Bộ, C25 x R27cm</a>
+                                    </h3>
+                                    <div class="product-price">939,600₫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3 row-fix">
+                            <div class="item-product">
+                                <div class="product-thumbnail">
+                                    <a href="" class="img-thumbnail">
+                                        <img  src="/assets/img/product-thumbnail/binh-hoa/h8.webp" alt="">
+                                    </a>
+                                    <div class="action">
+                                        <button class="btn-cart"><i class="fa-solid fa-basket-shopping"></i></button>
+                                        <button class="btn-love"><i class="fa-solid fa-heart"></i></button>
+                                        <button class="btn-view"><i class="fa-solid fa-expand"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        <a href="">Bình cắm hoa, họa tiết khắc chìm Bách Hoa, C21xR7, gốm mỹ nghệ</a>
+                                    </h3>
+                                    <div class="product-price">2,939,600₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </content>
+
+        <footer class="footer">
+            <div class="mid-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 ft-info">
+                            <h4 class="title-menu">THÔNG TIN</h4>
+                            <div class="group-address">
+                                <ul class="footer-ul">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>1900 6750</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>support@sapo.vn</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4 class="title-menu">MẠNG XÃ HỘI</h4>
+                            <ul class="social footer-ul">
+                                <li><img src="/assets/img/icon-social/facebook.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-social/zalo.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-social/google.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-social/youtube (1).webp" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 ft-menu">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <h4 class="title-menu">CHÍNH SÁCH</h4>
+                                    <ul class="list-menu hidden-mobile">
+                                        <li>Chính sách bảo mật</li>
+                                        <li>Chính sách vận chuyển</li>
+                                        <li>Chính sách đổi trả</li>
+                                        <li>Quy định sử dụng</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <h4 class="title-menu">HƯỚNG DẪN</h4>
+                                    <ul class="list-menu hidden-mobile">
+                                        <li>Hướng dẫn mua hàng</li>
+                                        <li>Hướng dẫn thanh toán</li>
+                                        <li>Hướng dẫn giao vận</li>
+                                        <li>Điều khoản dịch vụ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h4 class="title-menu">ĐĂNG KÝ NHẬN TIN</h4>
+                            <span>Đăng ký ngay! Để nhận thật nhiều ưu đãi</span>
+                            <form action="">
+                                <input type="text">
+                                <button>ĐĂNG KÝ</button>
+                            </form>
+                            <h4 class="title-menu">HÌNH THỨC THANH TOÁN</h4>
+                            <ul class="payment footer-ul">
+                                <li><img src="/assets/img/icon-payment/payment_1.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-payment/payment_2.webp" alt=""></li>
+                                <li><img src="/assets/img/icon-payment/payment_3.webp" alt=""></li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/proudct.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            document.querySelectorAll('.carousel-thumbnails img').forEach((img, index) => {
+            img.addEventListener('click', () => {
+            const carousel = new bootstrap.Carousel(document.querySelector('#carouselProductDetail'));
+            carousel.to(index);
+          });
+        });
+        
+        // Gọi hàm initNumberGroup() khi tài liệu đã sẵn sàng
+        initNumberGroup();
+
+        // Hàm initNumberGroup() để khởi tạo nhóm số
+        function initNumberGroup() {
+            $('#decrement').on('click', function() {
+                let quantity = $('#quantity').val();
+                if (quantity > 1) {
+                    $('#quantity').val(--quantity);
+                }
+            });
+
+            $('#increment').on('click', function() {
+                let quantity = $('#quantity').val();
+                $('#quantity').val(++quantity);
+            });
+        }
+        $('#add-to-cart').click(function() {
+        // Kích hoạt modal bằng jQuery
+        $('#cartModal').modal('show');
+        setTimeout(function(){
+            $('#cartModal').modal('hide');
+        }, 1200);
+    });
+        
+    });
+  
+    
+    </script>
+</body>
+
+</html>
