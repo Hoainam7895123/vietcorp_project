@@ -60,6 +60,7 @@
     background-color: #6c757d;
     color: #ffffff;
     border: none;
+    max-height: fit-content;
 }
 
 .btn-secondary:hover {
@@ -546,7 +547,9 @@
         margin-left: 15px;
     }
 }
-
+.dropdown-menu{
+    box-shadow: 5px 5px 5px rgb(215, 133, 1,0.5);
+}
 
 /*** Date Picker ***/
 .bootstrap-datetimepicker-widget.bottom {
