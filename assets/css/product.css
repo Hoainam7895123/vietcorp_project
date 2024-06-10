@@ -127,6 +127,10 @@ Start Slider-menu
 }
 
 @media screen and (max-width : 1200px) {
+    .bread-crumb {
+        margin-top: 0;
+    }
+    
     .slider-wrapper .image-list {
         padding-top: 10px;
         display: grid;
